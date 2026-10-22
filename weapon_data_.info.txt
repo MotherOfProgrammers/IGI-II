@@ -1,0 +1,18 @@
+Weapon Configs
+
+weapons/weapon.qsc - base weapon data
+weapon/ammo.qsc
+humanplayer/humanplayer.qsc - player limits, weapon limits, initializations
+missions/location{location_number}/level{level_number}/objects.qsc - level based limitations
+
+
+
+Weapon Data
+
+* Weapon data either assembled by its Name or ID or Code
+main model - igi2_collected/common/models/{WEAPON_CODE}.mef
+player textures - igi2_collected/common/anims/*_{WEAPON_NAME}_1st.iff <= First Person Animations
+		- igi2_collected/common/anims/*_{WEAPON_NAME}.iff <= Third Person Animations
+basic gun textures - igi2_collected/weapons/{WEAPON_NAME}.spr <= Basic HUD Sprite Object(Image)
+		   - igi2_collected/weapons/{WEAPON_NAME}_pickup.spr <= Pickup Sprite Object(Image)
+gun sounds - igi2_collected/common/sounds/{WEAPON_NAME}_shot_{NO}.wav <= Here {NO} handles different types of gun shots
