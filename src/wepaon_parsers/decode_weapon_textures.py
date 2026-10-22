@@ -1,85 +1,85 @@
+
 # Created By MotherOfProgrammers(MOP)
 import os
 from pathlib import Path
-import sys
 import subprocess
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-OUTPUT_WEAPONS_DIR = os.path.join(BASE_DIR,"out","weapons_textures")
-WEAPONS_TEXTURE_DIR = os.path.join(BASE_DIR,"igi2_collected","weapons")
+BASE_DIR = Path(__file__).resolve().parent
+OUTPUT_WEAPONS_DIR = BASE_DIR/"out"/"weapons_textures"
+WEAPONS_TEXTURE_DIR = BASE_DIR/"igi2_collected"/"weapons"
 
 def generate_weapon_textures():
-	os.chdir(os.path.join(BASE_DIR,"out"))
-	folders_out = [obj for obj in os.listdir() if not os.path.isfile(obj)]
+	if not WEAPONS_TEXTURE_DIR.is_dir():
+		raise FileNotFoundError(f"Weapon texture directory not found: {WEAPONS_TEXTURE_DIR}")
 
-	# check whether if the weapon_textures folder is already available in the user FS, if not create
-	if not "weapons_textures" in folders_out:
-		Path(OUTPUT_WEAPONS_DIR).mkdir(parents=True,exist_ok=True)
+	OUTPUT_WEAPONS_DIR.mkdir(parents=True,exist_ok=True)
 
-	os.chdir(BASE_DIR)
-	IGI2CONV_DIR = os.path.join(BASE_DIR,
-		"".join([objs for objs in os.listdir() if (bool(os.path.isfile(objs)) == False and objs.startswith("igi2conv"))]))
-	os.chdir(WEAPONS_TEXTURE_DIR)
+	# locate the IGI2 converter executable
+	IGI2CONV_DIR = next((path for folder in BASE_DIR.iterdir() if folder.is_dir() and folder.name.startswith("igi2conv") for path in [folder/"igi2conv.exe",folder/"igi2conv"/"igi2conv.exe"] if path.is_file()),None)
+	if not IGI2CONV_DIR:
+		raise FileNotFoundError("Could not find igi2conv.exe.")
+
+	weapon_files = sorted((path for path in WEAPONS_TEXTURE_DIR.iterdir() if path.is_file() and path.suffix.lower() == ".spr"),key=lambda path: path.name.lower())
+	weapon_names = {path.stem.upper(): path.stem for path in weapon_files if "_" not in path.stem}
+	weapon_dirs = {}
+
+	# map every texture to its correct weapon directory
+	for weapon_encodes in weapon_files:
+		weapon_name = weapon_encodes.stem.removesuffix("_pickup")
+		matches = [name for name in weapon_names if weapon_name.upper().startswith(name)]
+		if not matches:
+			continue
+
+		target_name = max(matches,key=len)
+		target_dir = OUTPUT_WEAPONS_DIR/target_name
+		target_dir.mkdir(parents=True,exist_ok=True)
+		weapon_dirs[weapon_encodes] = target_dir
 
 	print("Creating weapon texture directories...")
-	for weapon_encodes in os.listdir():
-		if os.path.isfile(weapon_encodes) and weapon_encodes.endswith(".spr"):
-			if not "_" in weapon_encodes: # created only the folders one time(unique)
-				os.chdir(OUTPUT_WEAPONS_DIR)
-
-				# create new/missing weapon texture directories
-				if not os.path.join(OUTPUT_WEAPONS_DIR,weapon_encodes.split(".spr")[0].upper()) in os.listdir():
-					Path(os.path.join(OUTPUT_WEAPONS_DIR,weapon_encodes.split(".spr")[0].upper())).mkdir(parents=True,exist_ok=True)
-
-		os.chdir(WEAPONS_TEXTURE_DIR)
-	os.chdir(WEAPONS_TEXTURE_DIR)
+	print(f"Weapon directories: {len(set(weapon_dirs.values()))}")
 
 	print("Converting weapon textures...")
-	for weapon_encodes in os.listdir():
-		if os.path.isfile(weapon_encodes) and weapon_encodes.endswith(".spr"):
-			os.chdir(OUTPUT_WEAPONS_DIR)
-			check = [weapon_texture_dir in weapon_encodes.split(".spr")[0].upper() for weapon_texture_dir in os.listdir() if not os.path.isfile(weapon_texture_dir)]
-			if True in check:
-				target_dir_name = [weapon_texture_dir for weapon_texture_dir in os.listdir()][check.index(True)]
-				os.chdir(os.path.join(OUTPUT_WEAPONS_DIR,target_dir_name))
-				if not weapon_encodes.replace(".spr",".0.tga") in os.listdir():
-					try:
-						# executes no-console process(silent-process)
-						subprocess.run(
-						[
-						f"{IGI2CONV_DIR}\\igi2conv\\igi2conv.exe",
-						"tex",
-						"extract",
-						f"{os.path.join(WEAPONS_TEXTURE_DIR,weapon_encodes)}",
-						f"{os.path.join(OUTPUT_WEAPONS_DIR,target_dir_name)}",
-						],
-						stdout=subprocess.DEVNULL,
-		    			stderr=subprocess.DEVNULL,
-		    			creationflags=subprocess.CREATE_NO_WINDOW,
-						)
-					except Exception as e:
-						print(e)
+	failures = 0
 
-				if not weapon_encodes.replace(".spr",".png") in os.listdir():
-					for weapon_decodes in os.listdir():
-						if os.path.isfile(weapon_decodes):
-							try:
-								subprocess.run(
-								[
-								f"{IGI2CONV_DIR}\\igi2conv\\igi2conv.exe",
-								"image",
-								"convert",
-								f"{os.path.join(OUTPUT_WEAPONS_DIR,target_dir_name,weapon_decodes)}",
-								f"{os.path.join(OUTPUT_WEAPONS_DIR,target_dir_name)}\\{weapon_decodes.replace(".0.tga",".png")}",
-								],
-								stdout=subprocess.DEVNULL,
-				    			stderr=subprocess.DEVNULL,
-				    			creationflags=subprocess.CREATE_NO_WINDOW,
-								)
-							except Exception as e:
-								print(e)
-		os.chdir(WEAPONS_TEXTURE_DIR)
-	return True
+	for weapon_encodes, target_dir in weapon_dirs.items():
+		print(f"Weapon: {weapon_encodes.name}")
+		print(f"Target-DIR: {target_dir.name}")
+
+		source_file = weapon_encodes
+		expected_tga = target_dir/f"{weapon_encodes.stem}.0.tga"
+
+		if not expected_tga.is_file():
+			try:
+				result = subprocess.run([str(IGI2CONV_DIR),"tex","extract",str(source_file),str(target_dir)],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL,creationflags=getattr(subprocess,"CREATE_NO_WINDOW",0),check=False)
+				if result.returncode != 0:
+					print(f"Extraction failed: {weapon_encodes.name} (exit code {result.returncode})")
+					failures += 1
+			except OSError as e:
+				print(f"Extraction error: {weapon_encodes.name}: {e}")
+				failures += 1
+				continue
+
+		# convert extracted TGA textures to PNG
+		for weapon_decodes in sorted(target_dir.glob("*.tga")):
+			png_name = weapon_decodes.stem.removesuffix(".0")+".png"
+			png_path = target_dir/png_name
+
+			if png_path.is_file():
+				continue
+
+			try:
+				result = subprocess.run([str(IGI2CONV_DIR),"image","convert",str(weapon_decodes),str(png_path)],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL,creationflags=getattr(subprocess,"CREATE_NO_WINDOW",0),check=False)
+				if result.returncode != 0 or not png_path.is_file():
+					print(f"Conversion failed: {weapon_decodes.name} (exit code {result.returncode})")
+					failures += 1
+			except OSError as e:
+				print(f"Conversion error: {weapon_decodes.name}: {e}")
+				failures += 1
+
+	print(f"Weapon directories: {len(set(weapon_dirs.values()))}")
+	print(f"Conversion failures: {failures}")
+	return failures == 0
+
 
 #def main():
 #	weapon_textures = generate_weapon_textures()
