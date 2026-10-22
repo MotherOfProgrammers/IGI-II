@@ -1,0 +1,6 @@
+Task_New(-1, "WeaponType", "WEAPON_ID_APC", "WEAPON_ID_APC", "APC", "apc", "", WEAPONTYPE_GUN, WEAPONCATEGORY_NONE, SIGHTDISPLAYTYPE_NONE, "", 1, 1, 1, 1, "", "", "", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, "", "", "", "", "", "", "", "", "", "", "", "", "", "greenglow", 75, TASKTYPE_GUN, FALSE, 
+FALSE, TASKTYPE_NONE, FALSE, FALSE, FALSE, "WEAPONS:apc_pickup.spr", FALSE, FALSE, 90, FALSE, FALSE, -1, -1, 0.03999999910593033, TRUE, 
+	Task_New(-1, "WeaponTypeParameterContainer", "Primary Parameters", 0, 
+		Task_New(-1, "Gun", "", AMMO_ID_UNDEFINED, AMMODISPLAYTYPE_CLIP, 1, 10000, 12, 2000, 5, 5, "", "", 0.25, 0, 0, 0, 0, 1, 5, 2, 0.20000000298023224, 0.20000000298023224, TASKTYPE_MISSILE, "", "", "", "", "", "", "", "", "", "", "", "", "", "rpg_launch_1", "", "", FALSE, FALSE, FALSE, "", 
+HUMANAI_DETECTIONEVENT_GUNSHOT_RANGE, FALSE, 0, 
+			Task_New(-1, "TagItemString16", "Missile - Model", "Missile - Model", "129_02_1"))));

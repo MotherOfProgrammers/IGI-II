@@ -1,0 +1,10 @@
+Task_New(-1, "WeaponType", "WEAPON_ID_AK47", "WEAPON_ID_AK47", "AK-47", "ak47", "WEAPONS:ak47.spr", WEAPONTYPE_GUN, WEAPONCATEGORY_PRIMARY, SIGHTDISPLAYTYPE_ASSAULTRIFLE, "107_01_1", 1, 30, 1, 1, "", "", "", 0, 0, 0, 0.699999988079071, 3.4000000953674316, 2.4000000953674316, 0.5, 2.4000000953674316, 
+0.4000000059604645, 6, 2, 1, 0.15000000596046448, 0.6000000238418579, "walk_ak47_1st", "run_ak47_1st", "weaponraise_ak47_1st", "", "", "", "", "", "", "", "", "", "", "greenglow", 300, TASKTYPE_GUN, FALSE, FALSE, TASKTYPE_KNIFE, TRUE, FALSE, TRUE, "WEAPONS:ak47_pickup.spr", FALSE, FALSE, 2900, TRUE, 
+FALSE, 3, 1, 0.03999999910593033, TRUE, 
+	Task_New(-1, "WeaponTypeParameterContainer", "Primary Parameters", 0, 
+		Task_New(-1, "Gun", "", AMMO_ID_AK74CLIP, AMMODISPLAYTYPE_CLIP, 1, 30, 600, 300, 2.700000047683716, 710, "flash_round.tex", "flash_side2.tex", 0.20000000298023224, 2.700000047683716, 2.9000000953674316, -1, -1.100000023841858, 1, 5, 10, 0.125, 0.125, TASKTYPE_GUNSHOT, "1123_04_1", "fire_ak47_1st", "", 
+"", "reload_ak47_1st", "", "", "", "", "", "", "", "", "ak74_loop", "", "", TRUE, FALSE, FALSE, "ak74_loop_e", HUMANAI_DETECTIONEVENT_GUNSHOT_RANGE, FALSE, 0, 
+			Task_New(-1, "TagItemReal32", "Damage Factor", "Damage Factor", 0.4300000071525574), 
+			Task_New(-1, "TagItemReal32", "Penetration Power", "Penetration Power", 12))), 
+	Task_New(-1, "WeaponTypeParameterContainer", "Secondary Parameters", 1, 
+		Task_New(-1, "Knife", "", 3, 30, 0.5, 0.4000000059604645, "hitwithstock_ak47_1st", "", "", "fire_hitwithstock_ak47", "gunpunch_01")));

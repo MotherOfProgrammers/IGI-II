@@ -1,0 +1,181 @@
+{
+    "weapon_id": "WEAPON_ID_BARRETTHERMO",
+    "data": {
+        "task_id": -1,
+        "type": "WeaponType",
+        "args": [
+            "WEAPON_ID_BARRETTHERMO",
+            "WEAPON_ID_BARRETTHERMO",
+            "M82A1-T",
+            "barett",
+            "WEAPONS:barrett.spr",
+            "WEAPONTYPE_GUN",
+            "WEAPONCATEGORY_PRIMARY",
+            "SIGHTDISPLAYTYPE_SNIPERRIFLE",
+            "142_01_1",
+            1,
+            1,
+            1,
+            1,
+            "",
+            "",
+            "",
+            0,
+            0,
+            0,
+            0.6000000238418579,
+            8,
+            6,
+            0.05000000074505806,
+            6,
+            0.0005000000237487257,
+            3,
+            2,
+            2,
+            0.25,
+            0.699999988079071,
+            "walk_barett_1st",
+            "run_barett_1st",
+            "weaponraise_barett_1st",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            300,
+            "TASKTYPE_GUN",
+            "FALSE",
+            "FALSE",
+            "TASKTYPE_ZOOM",
+            "FALSE",
+            "FALSE",
+            "TRUE",
+            "WEAPONS:barrett-T_pickup.spr",
+            "FALSE",
+            "FALSE",
+            11000,
+            "FALSE",
+            "FALSE",
+            -1,
+            -1,
+            0.03999999910593033,
+            "TRUE",
+            {
+                "task_id": -1,
+                "type": "WeaponTypeParameterContainer",
+                "args": [
+                    "Primary Parameters",
+                    0,
+                    {
+                        "task_id": -1,
+                        "type": "Gun",
+                        "args": [
+                            "",
+                            "AMMO_ID_BARRETCLIP",
+                            "AMMODISPLAYTYPE_NORMAL",
+                            1,
+                            10,
+                            40,
+                            1800,
+                            5,
+                            1000,
+                            "flash_split.tex",
+                            "flash_side.tex",
+                            0.4000000059604645,
+                            1.5,
+                            4,
+                            -0.30000001192092896,
+                            -0.5,
+                            1,
+                            5,
+                            2,
+                            0.05000000074505806,
+                            0.05000000074505806,
+                            "TASKTYPE_GUNSHOT",
+                            "",
+                            "fire_barett_1st",
+                            "",
+                            "",
+                            "reload_barett_1st",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "barrett_shot_1",
+                            "",
+                            "",
+                            "FALSE",
+                            "FALSE",
+                            "FALSE",
+                            "",
+                            "HUMANAI_DETECTIONEVENT_GUNSHOT_RANGE",
+                            "FALSE",
+                            0,
+                            {
+                                "task_id": -1,
+                                "type": "TagItemReal32",
+                                "args": [
+                                    "Damage Factor",
+                                    "Damage Factor",
+                                    3
+                                ]
+                            },
+                            {
+                                "task_id": -1,
+                                "type": "TagItemReal32",
+                                "args": [
+                                    "Penetration Power",
+                                    "Penetration Power",
+                                    18
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "task_id": -1,
+                "type": "WeaponTypeParameterContainer",
+                "args": [
+                    "Secondary Parameters",
+                    1,
+                    {
+                        "task_id": -1,
+                        "type": "Zoom",
+                        "args": [
+                            "",
+                            3,
+                            20,
+                            2,
+                            "TASKTYPE_SNIPEROVERLAY",
+                            "FALSE",
+                            "sniper_zoom",
+                            0.30000001192092896,
+                            0.20000000298023224,
+                            0.15000000596046448,
+                            {
+                                "task_id": -1,
+                                "type": "TagItemBool8",
+                                "args": [
+                                    "Infrared on/off",
+                                    "Infrared on/off",
+                                    "TRUE"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

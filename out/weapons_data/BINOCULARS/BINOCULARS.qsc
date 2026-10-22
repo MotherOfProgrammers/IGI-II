@@ -1,0 +1,4 @@
+Task_New(-1, "WeaponType", "WEAPON_ID_BINOCULARS", "WEAPON_ID_BINOCULARS", "BINOCULARS", "binoculars", "WEAPONS:binoculars.spr", WEAPONTYPE_BINOCULAR, WEAPONCATEGORY_BINOCULARS, SIGHTDISPLAYTYPE_NONE, "109_01_1", 1, 1, 1, 1, "", "", "", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.4000000059604645, 
+"walk_binoculars_1st", "run_binoculars_1st", "weaponraise_binoculars_1st", "", "", "", "", "", "", "", "", "", "", "yellglow", 75, TASKTYPE_ZOOM, FALSE, FALSE, TASKTYPE_NONE, FALSE, FALSE, TRUE, "WEAPONS:binoculars_pickup.spr", FALSE, FALSE, 500, TRUE, TRUE, 8, 1, 0.03999999910593033, FALSE, 
+	Task_New(-1, "WeaponTypeParameterContainer", "Primary Parameters", 0, 
+		Task_New(-1, "Zoom", "", 5, 45, 2, TASKTYPE_BINOCULAROVERLAY, FALSE, "bin_zoom", 0, 0, 0)));

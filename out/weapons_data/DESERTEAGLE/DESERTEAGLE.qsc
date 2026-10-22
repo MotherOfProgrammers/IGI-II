@@ -1,0 +1,10 @@
+Task_New(-1, "WeaponType", "WEAPON_ID_DESERTEAGLE", "WEAPON_ID_DESERTEAGLE", "D-EAGLE", "deserteagle", "WEAPONS:deserteagle.spr", WEAPONTYPE_PISTOL, WEAPONCATEGORY_SIDEARM, SIGHTDISPLAYTYPE_PISTOL, "138_01_1", 1, 1, 1, 1, "", "", "", 0, 0, 0, 0.800000011920929, 1.2999999523162842, 1, 
+0.4000000059604645, 1, 0.30000001192092896, 2.5, 0.800000011920929, 0.800000011920929, 0.10000000149011612, 0.4000000059604645, "walk_deserteagle_1st", "run_deserteagle_1st", "weaponraise_deserteagle_1st", "", "", "", "", "", "", "", "", "", "", "", 75, TASKTYPE_GUN, FALSE, FALSE, TASKTYPE_KNIFE, 
+FALSE, FALSE, FALSE, "WEAPONS:deserteagle_pickup.spr", FALSE, FALSE, 850, TRUE, TRUE, 1, 4, 0.03999999910593033, TRUE, 
+	Task_New(-1, "WeaponTypeParameterContainer", "Primary Parameters", 0, 
+		Task_New(-1, "Gun", "", AMMO_ID_DESERTEAGLECLIP, AMMODISPLAYTYPE_CLIP, 1, 7, 150, 220, 2.799999952316284, 436, "flash_blast.tex", "flash_side4.tex", 0.15000000596046448, 11, 11, -1.5, -1.5, 1, 1, 10, 0.1899999976158142, 0.1899999976158142, TASKTYPE_GUNSHOT, "1123_02_1", "fire_deserteagle_1st", "", "", 
+"reload_deserteagle_1st", "", "", "", "", "", "", "", "", "deagle_shot_1", "", "", FALSE, FALSE, FALSE, "", HUMANAI_DETECTIONEVENT_GUNSHOT_PISTOL_RANGE, FALSE, 0, 
+			Task_New(-1, "TagItemReal32", "Damage Factor", "Damage Factor", 0.699999988079071), 
+			Task_New(-1, "TagItemReal32", "Penetration Power", "Penetration Power", 6))), 
+	Task_New(-1, "WeaponTypeParameterContainer", "Secondary Parameters", 1, 
+		Task_New(-1, "Knife", "", 3, 30, 0.5, 0.4000000059604645, "pistolwhip_deserteagle_1st", "", "", "pistolwhip_pistol", "gunpunch_01")));

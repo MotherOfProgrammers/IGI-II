@@ -1,0 +1,4 @@
+Task_New(-1, "WeaponType", "WEAPON_ID_MEDIPACK", "WEAPON_ID_MEDIPACK", "MEDIPACK", "syringe", "WEAPONS:health.spr", WEAPONTYPE_MEDIPACK, WEAPONCATEGORY_MEDIPACK, SIGHTDISPLAYTYPE_NONE, "150_01_1", 1, 1, 1, 1, "", "", "", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.4000000059604645, "walk_syringe_1st", 
+"run_syringe_1st", "weaponraise_syringe_1st", "", "", "", "", "", "", "", "", "", "", "yellglow", 75, TASKTYPE_MEDIPACK, TRUE, FALSE, TASKTYPE_NONE, FALSE, FALSE, FALSE, "WEAPONS:medipack_pickup.spr", FALSE, FALSE, 3000, TRUE, TRUE, 8, 2, 0.03999999910593033, TRUE, 
+	Task_New(-1, "WeaponTypeParameterContainer", "Primary Parameters", 0, 
+		Task_New(-1, "Medipack", "", 0.5, 120, AMMO_ID_MEDIPACK, "fire_syringe_1st", "walk_syringe_1st", "fire_syringe_1st", "", "", "", "", "", "")));

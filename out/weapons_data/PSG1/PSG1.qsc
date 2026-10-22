@@ -1,0 +1,10 @@
+Task_New(-1, "WeaponType", "WEAPON_ID_PSG1", "WEAPON_ID_PSG1", "PSG-1", "psg", "WEAPONS:psg-1.spr", WEAPONTYPE_GUN, WEAPONCATEGORY_PRIMARY, SIGHTDISPLAYTYPE_SNIPERRIFLE, "104_01_1", 1, 1, 1, 1, "", "", "", 0, 0, 0, 0.4000000059604645, 7, 5, 0.10000000149011612, 5, 0.0005000000237487257, 3, 2, 2, 
+0.2199999988079071, 0.699999988079071, "walk_psg_1st", "run_psg_1st", "weaponraise_psg_1st", "", "", "", "", "", "", "", "", "", "", "", 300, TASKTYPE_GUN, FALSE, FALSE, TASKTYPE_ZOOM, FALSE, FALSE, TRUE, "WEAPONS:psg-1_pickup.spr", FALSE, FALSE, 9000, FALSE, TRUE, 4, 2, 0.03999999910593033, TRUE, 
+	Task_New(-1, "WeaponTypeParameterContainer", "Primary Parameters", 0, 
+		Task_New(-1, "Gun", "", AMMO_ID_PSG1CLIP, AMMODISPLAYTYPE_CLIP, 1, 5, 35, 1750, 3, 830, "flash_compact.tex", "flash_side.tex", 0.20000000298023224, 1.5, 4, -0.30000001192092896, -0.5, 1, 5, 2, 0.05000000074505806, 0.05000000074505806, TASKTYPE_GUNSHOT, "1123_04_1", "fire_psg_1st", "", "", 
+"reload_psg_1st", "", "", "", "", "", "", "", "", "psg1_shot_1", "", "", FALSE, FALSE, FALSE, "", HUMANAI_DETECTIONEVENT_GUNSHOT_RANGE, FALSE, 0, 
+			Task_New(-1, "TagItemReal32", "Damage Factor", "Damage Factor", 0.800000011920929), 
+			Task_New(-1, "TagItemReal32", "Penetration Power", "Penetration Power", 16))), 
+	Task_New(-1, "WeaponTypeParameterContainer", "Secondary Parameters", 1, 
+		Task_New(-1, "Zoom", "", 7.5, 30, 2, TASKTYPE_PSG1SNIPEROVERLAY, FALSE, "sniper_zoom", 0.30000001192092896, 0.20000000298023224, 0.15000000596046448, 
+			Task_New(-1, "TagItemBool8", "Infrared on/off", "Infrared on/off", FALSE))));

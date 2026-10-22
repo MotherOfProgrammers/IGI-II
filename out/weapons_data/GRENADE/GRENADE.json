@@ -1,0 +1,182 @@
+{
+    "weapon_id": "WEAPON_ID_GRENADE",
+    "data": {
+        "task_id": -1,
+        "type": "WeaponType",
+        "args": [
+            "WEAPON_ID_GRENADE",
+            "WEAPON_ID_GRENADE",
+            "GRENADE",
+            "grenade",
+            "WEAPONS:splintgrenade.spr",
+            "WEAPONTYPE_GRENADE",
+            "WEAPONCATEGORY_GRENADE",
+            "SIGHTDISPLAYTYPE_GRENADE",
+            "122_01_1",
+            1,
+            1,
+            1,
+            1,
+            "",
+            "",
+            "",
+            0,
+            0,
+            0,
+            0.10000000149011612,
+            0.5,
+            0.30000001192092896,
+            0.10000000149011612,
+            0.30000001192092896,
+            0.10000000149011612,
+            2,
+            2,
+            1,
+            0,
+            0.4000000059604645,
+            "walk_grenade_1st",
+            "run_grenade_1st",
+            "weaponraise_grenade_1st",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "yellglow",
+            75,
+            "TASKTYPE_PROJECTILELAUNCHER",
+            "TRUE",
+            "FALSE",
+            "TASKTYPE_PULLPIN",
+            "FALSE",
+            "FALSE",
+            "FALSE",
+            "WEAPONS:grenade_pickup.spr",
+            "FALSE",
+            "FALSE",
+            900,
+            "TRUE",
+            "TRUE",
+            7,
+            3,
+            0.03999999910593033,
+            "TRUE",
+            {
+                "task_id": -1,
+                "type": "WeaponTypeParameterContainer",
+                "args": [
+                    "Primary Parameters",
+                    0,
+                    {
+                        "task_id": -1,
+                        "type": "ProjectileLauncher",
+                        "args": [
+                            "",
+                            "FALSE",
+                            "AMMO_ID_GRENADE",
+                            60,
+                            23,
+                            1,
+                            5,
+                            5,
+                            "fire_grenade_1st",
+                            "",
+                            "fire_grenade",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "TASKTYPE_GRENADE",
+                            {
+                                "task_id": -1,
+                                "type": "TagItemInt32",
+                                "args": [
+                                    "Explosion Type",
+                                    "Explosion Type",
+                                    0
+                                ]
+                            },
+                            {
+                                "task_id": -1,
+                                "type": "TagItemReal32",
+                                "args": [
+                                    "Explosion Radius (meters)",
+                                    "Explosion Radius (meters)",
+                                    4
+                                ]
+                            },
+                            {
+                                "task_id": -1,
+                                "type": "TagItemReal32",
+                                "args": [
+                                    "Explosion Falloff (meters)",
+                                    "Explosion Falloff (meters)",
+                                    10
+                                ]
+                            },
+                            {
+                                "task_id": -1,
+                                "type": "TagItemReal32",
+                                "args": [
+                                    "Explosion Damage Factor",
+                                    "Explosion Damage Factor",
+                                    4
+                                ]
+                            },
+                            {
+                                "task_id": -1,
+                                "type": "TagItemReal32",
+                                "args": [
+                                    "Throw Ideal Angle (degrees)",
+                                    "Throw Ideal Angle (degrees)",
+                                    120
+                                ]
+                            },
+                            {
+                                "task_id": -1,
+                                "type": "TagItemReal32",
+                                "args": [
+                                    "Throw Gamma Exponent",
+                                    "Throw Gamma Exponent",
+                                    1
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "task_id": -1,
+                "type": "WeaponTypeParameterContainer",
+                "args": [
+                    "Secondary Parameters",
+                    1,
+                    {
+                        "task_id": -1,
+                        "type": "PullPin",
+                        "args": [
+                            "",
+                            "fire_pullpin_grenade_1st",
+                            "pullpin",
+                            5
+                        ]
+                    }
+                ]
+            },
+            {
+                "task_id": -1,
+                "type": "TagItemString16",
+                "args": [
+                    "",
+                    "ProjectileModel",
+                    "133_01_1"
+                ]
+            }
+        ]
+    }
+}

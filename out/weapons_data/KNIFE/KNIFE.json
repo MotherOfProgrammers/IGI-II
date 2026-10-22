@@ -1,0 +1,119 @@
+{
+    "weapon_id": "WEAPON_ID_KNIFE",
+    "data": {
+        "task_id": -1,
+        "type": "WeaponType",
+        "args": [
+            "WEAPON_ID_KNIFE",
+            "WEAPON_ID_KNIFE",
+            "COMBAT KNIFE",
+            "knife",
+            "WEAPONS:knife.spr",
+            "WEAPONTYPE_KNIFE",
+            "WEAPONCATEGORY_KNIFE",
+            "SIGHTDISPLAYTYPE_NONE",
+            "111_01_1",
+            1,
+            99999999,
+            1,
+            1,
+            "",
+            "",
+            "",
+            0,
+            0,
+            0,
+            0.009999999776482582,
+            0.009999999776482582,
+            0.009999999776482582,
+            0.009999999776482582,
+            0.009999999776482582,
+            0.009999999776482582,
+            0.009999999776482582,
+            0.009999999776482582,
+            0.009999999776482582,
+            0,
+            0.4000000059604645,
+            "walk_knife_1st",
+            "run_knife_1st",
+            "weaponraise_knife_1st",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "yellglow",
+            75,
+            "TASKTYPE_KNIFE",
+            "TRUE",
+            "FALSE",
+            "TASKTYPE_KNIFE",
+            "TRUE",
+            "FALSE",
+            "TRUE",
+            "WEAPONS:knife_pickup.spr",
+            "FALSE",
+            "FALSE",
+            90,
+            "FALSE",
+            "FALSE",
+            -1,
+            -1,
+            0.03999999910593033,
+            "FALSE",
+            {
+                "task_id": -1,
+                "type": "WeaponTypeParameterContainer",
+                "args": [
+                    "Primary Parameters",
+                    0,
+                    {
+                        "task_id": -1,
+                        "type": "Knife",
+                        "args": [
+                            "",
+                            7,
+                            60,
+                            0.4000000059604645,
+                            0.4000000059604645,
+                            "fire_knife1_1st",
+                            "fire_knife2_1st",
+                            "",
+                            "fire_knife",
+                            "knife_1"
+                        ]
+                    }
+                ]
+            },
+            {
+                "task_id": -1,
+                "type": "WeaponTypeParameterContainer",
+                "args": [
+                    "Secondary Parameters",
+                    1,
+                    {
+                        "task_id": -1,
+                        "type": "Knife",
+                        "args": [
+                            "",
+                            7,
+                            60,
+                            0.6000000238418579,
+                            0.4000000059604645,
+                            "fire_knife3_1st",
+                            "",
+                            "",
+                            "fire_knife",
+                            "knife_1"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

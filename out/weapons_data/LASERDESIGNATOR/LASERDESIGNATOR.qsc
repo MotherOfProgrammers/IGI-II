@@ -1,0 +1,7 @@
+Task_New(-1, "WeaponType", "WEAPON_ID_LASERDESIGNATOR", "WEAPON_ID_LASERDESIGNATOR", "LASER DESIGNATOR", "laserdesignator", "WEAPONS:laser.spr", WEAPONTYPE_SPECIAL, WEAPONCATEGORY_LASERDESIGNATOR, SIGHTDISPLAYTYPE_NONE, "148_01_1", 1, 1, 1, 1, "", "", "", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0.4000000059604645, "walk_laserdesignator_1st", "run_laserdesignator_1st", "weaponraise_laserdesignator_1st", "", "", "", "", "", "", "", "", "", "", "", 75, TASKTYPE_LASERDESIGNATOR, FALSE, FALSE, TASKTYPE_ZOOM, FALSE, FALSE, FALSE, "WEAPONS:laser_pickup.spr", TRUE, FALSE, 90, FALSE, FALSE, -1, -1, 
+0.03999999910593033, FALSE, 
+	Task_New(-1, "WeaponTypeParameterContainer", "Primary Parameters", 0, 
+		Task_New(-1, "LaserDesignator", "", 50, "fire_laserdesignator_1st", "", "")), 
+	Task_New(-1, "WeaponTypeParameterContainer", "Secondary Parameters", 1, 
+		Task_New(-1, "Zoom", "", 10, 40, 2, TASKTYPE_LASERDESIGNATOROVERLAY, FALSE, "", 0, 0, 0)));

@@ -1,0 +1,10 @@
+Task_New(-1, "WeaponType", "WEAPON_ID_UZI", "WEAPON_ID_UZI", "UZI", "uzi", "WEAPONS:uzi.spr", WEAPONTYPE_PISTOL, WEAPONCATEGORY_PRIMARY, SIGHTDISPLAYTYPE_SMG, "130_01_1", 1, 32, 1, 1, "", "", "", 0, 0, 0, 1.100000023841858, 2, 1.600000023841858, 0.800000011920929, 1.600000023841858, 0.699999988079071, 
+2.799999952316284, 0.800000011920929, 0.800000011920929, 0.10999999940395355, 0.5, "walk_uzi_1st", "run_uzi_1st", "weaponraise_uzi_1st", "", "", "", "", "", "", "", "", "", "", "", 75, TASKTYPE_GUN, FALSE, FALSE, TASKTYPE_KNIFE, FALSE, FALSE, FALSE, "WEAPONS:uzi_pickup.spr", FALSE, FALSE, 2300, 
+TRUE, TRUE, 2, 2, 0.03999999910593033, TRUE, 
+	Task_New(-1, "WeaponTypeParameterContainer", "Primary Parameters", 0, 
+		Task_New(-1, "Gun", "", AMMO_ID_UZICLIP, AMMODISPLAYTYPE_CLIP, 1, 32, 600, 250, 2.299999952316284, 400, "flash_smg.tex", "flash_side2.tex", 0.25, 1.899999976158142, 2.5, -1, -1.100000023841858, 0.699999988079071, 7, 8, 0.17499999701976776, 0.05000000074505806, TASKTYPE_GUNSHOT, "1123_01_1", 
+"fire_uzi_1st", "", "", "reload_uzi_1st", "", "", "", "", "", "", "", "", "uzi_loop", "", "", TRUE, FALSE, FALSE, "uzi_loop_e", HUMANAI_DETECTIONEVENT_GUNSHOT_PISTOL_RANGE, FALSE, 0, 
+			Task_New(-1, "TagItemReal32", "Damage Factor", "Damage Factor", 0.25), 
+			Task_New(-1, "TagItemReal32", "Penetration Power", "Penetration Power", 3))), 
+	Task_New(-1, "WeaponTypeParameterContainer", "Secondary Parameters", 1, 
+		Task_New(-1, "Knife", "", 3, 30, 0.5, 0.4000000059604645, "pistolwhip_uzi_1st", "", "", "pistolwhip_uzi", "gunpunch_01")));

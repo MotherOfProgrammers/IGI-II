@@ -1,0 +1,205 @@
+{
+    "weapon_id": "WEAPON_ID_M16A2",
+    "data": {
+        "task_id": -1,
+        "type": "WeaponType",
+        "args": [
+            "WEAPON_ID_M16A2",
+            "WEAPON_ID_M16A2",
+            "M16 A2",
+            "m16",
+            "WEAPONS:m16.spr",
+            "WEAPONTYPE_GUN",
+            "WEAPONCATEGORY_PRIMARY",
+            "SIGHTDISPLAYTYPE_ASSAULTRIFLE",
+            "110_01_1",
+            1,
+            30,
+            1,
+            1,
+            "",
+            "",
+            "",
+            0,
+            0,
+            0,
+            0.6000000238418579,
+            3.5,
+            2.5,
+            0.44999998807907104,
+            2.5,
+            0.3499999940395355,
+            6,
+            2,
+            1.2000000476837158,
+            0.17499999701976776,
+            0.6000000238418579,
+            "walk_m16_1st",
+            "run_m16_1st",
+            "weaponraise_m16_1st",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "yellglow",
+            300,
+            "TASKTYPE_GUN",
+            "FALSE",
+            "FALSE",
+            "TASKTYPE_PROJECTILELAUNCHER",
+            "TRUE",
+            "FALSE",
+            "FALSE",
+            "WEAPONS:m16_pickup.spr",
+            "FALSE",
+            "FALSE",
+            4300,
+            "TRUE",
+            "TRUE",
+            3,
+            3,
+            0.03999999910593033,
+            "TRUE",
+            {
+                "task_id": -1,
+                "type": "WeaponTypeParameterContainer",
+                "args": [
+                    "Primary Parameters",
+                    0,
+                    {
+                        "task_id": -1,
+                        "type": "Gun",
+                        "args": [
+                            "",
+                            "AMMO_ID_M16CLIP",
+                            "AMMODISPLAYTYPE_CLIP",
+                            1,
+                            30,
+                            800,
+                            400,
+                            2.9000000953674316,
+                            950,
+                            "flash_cross.tex",
+                            "flash_side3.tex",
+                            0.25,
+                            2.200000047683716,
+                            2.299999952316284,
+                            -0.800000011920929,
+                            -1.2000000476837158,
+                            1,
+                            6,
+                            7,
+                            0.125,
+                            0.125,
+                            "TASKTYPE_GUNSHOT",
+                            "1123_03_1",
+                            "fire_m16_1st",
+                            "",
+                            "",
+                            "reload_m16_1st",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "m16_loop",
+                            "",
+                            "",
+                            "TRUE",
+                            "FALSE",
+                            "FALSE",
+                            "m16_loop_e",
+                            "HUMANAI_DETECTIONEVENT_GUNSHOT_RANGE",
+                            "FALSE",
+                            0,
+                            {
+                                "task_id": -1,
+                                "type": "TagItemReal32",
+                                "args": [
+                                    "Damage Factor",
+                                    "Damage Factor",
+                                    0.3799999952316284
+                                ]
+                            },
+                            {
+                                "task_id": -1,
+                                "type": "TagItemReal32",
+                                "args": [
+                                    "Penetration Power",
+                                    "Penetration Power",
+                                    8
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "task_id": -1,
+                "type": "WeaponTypeParameterContainer",
+                "args": [
+                    "Secondary Parameters",
+                    1,
+                    {
+                        "task_id": -1,
+                        "type": "ProjectileLauncher",
+                        "args": [
+                            "",
+                            "FALSE",
+                            "AMMO_ID_M203CLIP",
+                            20,
+                            40,
+                            300,
+                            1,
+                            4,
+                            "fire_reload_m203_1st",
+                            "fire_m203_1st",
+                            "fire_reload_m203",
+                            "fire_m203",
+                            "m203_launch_1",
+                            "",
+                            "",
+                            "TASKTYPE_IMPACTGRENADE",
+                            {
+                                "task_id": -1,
+                                "type": "TagItemString16",
+                                "args": [
+                                    "Model Name",
+                                    "Model Name",
+                                    "141_01_1"
+                                ]
+                            },
+                            {
+                                "task_id": -1,
+                                "type": "TagItemReal32",
+                                "args": [
+                                    "Explosion Damage",
+                                    "Explosion Damage",
+                                    2
+                                ]
+                            },
+                            {
+                                "task_id": -1,
+                                "type": "TagItemReal32",
+                                "args": [
+                                    "Explosion Radius",
+                                    "Explosion Radius",
+                                    7.5
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,7 @@
+Task_New(-1, "WeaponType", "WEAPON_ID_KNIFE", "WEAPON_ID_KNIFE", "COMBAT KNIFE", "knife", "WEAPONS:knife.spr", WEAPONTYPE_KNIFE, WEAPONCATEGORY_KNIFE, SIGHTDISPLAYTYPE_NONE, "111_01_1", 1, 99999999, 1, 1, "", "", "", 0, 0, 0, 0.009999999776482582, 0.009999999776482582, 0.009999999776482582, 
+0.009999999776482582, 0.009999999776482582, 0.009999999776482582, 0.009999999776482582, 0.009999999776482582, 0.009999999776482582, 0, 0.4000000059604645, "walk_knife_1st", "run_knife_1st", "weaponraise_knife_1st", "", "", "", "", "", "", "", "", "", "", "yellglow", 75, TASKTYPE_KNIFE, TRUE, FALSE, 
+TASKTYPE_KNIFE, TRUE, FALSE, TRUE, "WEAPONS:knife_pickup.spr", FALSE, FALSE, 90, FALSE, FALSE, -1, -1, 0.03999999910593033, FALSE, 
+	Task_New(-1, "WeaponTypeParameterContainer", "Primary Parameters", 0, 
+		Task_New(-1, "Knife", "", 7, 60, 0.4000000059604645, 0.4000000059604645, "fire_knife1_1st", "fire_knife2_1st", "", "fire_knife", "knife_1")), 
+	Task_New(-1, "WeaponTypeParameterContainer", "Secondary Parameters", 1, 
+		Task_New(-1, "Knife", "", 7, 60, 0.6000000238418579, 0.4000000059604645, "fire_knife3_1st", "", "", "fire_knife", "knife_1")));

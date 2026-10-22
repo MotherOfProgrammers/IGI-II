@@ -1,0 +1,866 @@
+[
+    {
+        "task_type": "TagItemInt32",
+        "fields": [
+            {
+                "name": "Name",
+                "type": "String256"
+            },
+            {
+                "name": "Value",
+                "type": "Int32"
+            }
+        ]
+    },
+    {
+        "task_type": "TagItemReal32",
+        "fields": [
+            {
+                "name": "Name",
+                "type": "String256"
+            },
+            {
+                "name": "Value",
+                "type": "Real32"
+            }
+        ]
+    },
+    {
+        "task_type": "TagItemString16",
+        "fields": [
+            {
+                "name": "Name",
+                "type": "String256"
+            },
+            {
+                "name": "Value",
+                "type": "String16"
+            }
+        ]
+    },
+    {
+        "task_type": "TagItemBool8",
+        "fields": [
+            {
+                "name": "Name",
+                "type": "String256"
+            },
+            {
+                "name": "Value",
+                "type": "bool8"
+            }
+        ]
+    },
+    {
+        "task_type": "WeaponTypeAnim",
+        "fields": []
+    },
+    {
+        "task_type": "WeaponType",
+        "fields": [
+            {
+                "name": "Weapon ID",
+                "type": "String32"
+            },
+            {
+                "name": "Weapon Name",
+                "type": "String256"
+            },
+            {
+                "name": "Weapon Animation Name",
+                "type": "String256"
+            },
+            {
+                "name": "Weapon Sprite",
+                "type": "String256"
+            },
+            {
+                "name": "Weapon Type",
+                "type": "EnumInt32"
+            },
+            {
+                "name": "Weapon Category",
+                "type": "EnumInt32"
+            },
+            {
+                "name": "Sight Display Type",
+                "type": "EnumInt32"
+            },
+            {
+                "name": "Fixed Model (Used by GunPickup)",
+                "type": "String32"
+            },
+            {
+                "name": "Available FireModes",
+                "type": "Int32"
+            },
+            {
+                "name": "Firemode Rounds In Succession",
+                "type": "Int32"
+            },
+            {
+                "name": "Firemode Rounds In Succession1",
+                "type": "Int32"
+            },
+            {
+                "name": "Firemode Rounds In Succession2",
+                "type": "Int32"
+            },
+            {
+                "name": "Firemode Name",
+                "type": "String32"
+            },
+            {
+                "name": "Firemode Name1",
+                "type": "String32"
+            },
+            {
+                "name": "Firemode Name2",
+                "type": "String32"
+            },
+            {
+                "name": "Firemode Firesound Stop Time",
+                "type": "Real32"
+            },
+            {
+                "name": "Firemode Firesound Stop Time1",
+                "type": "Real32"
+            },
+            {
+                "name": "Firemode Firesound Stop Time2",
+                "type": "Real32"
+            },
+            {
+                "name": "Standing Precision (Degrees)",
+                "type": "Degrees"
+            },
+            {
+                "name": "Running Precision (Degrees)",
+                "type": "Degrees"
+            },
+            {
+                "name": "Walking Precision (Degrees)",
+                "type": "Degrees"
+            },
+            {
+                "name": "Crouching Precision (Degrees)",
+                "type": "Degrees"
+            },
+            {
+                "name": "Crouch Walking Precision (Degrees)",
+                "type": "Degrees"
+            },
+            {
+                "name": "Lying Flat Precision (Degrees)",
+                "type": "Degrees"
+            },
+            {
+                "name": "Crawling Precision (Degrees)",
+                "type": "Degrees"
+            },
+            {
+                "name": "Jumping Precision Modifier",
+                "type": "Real32"
+            },
+            {
+                "name": "Turning Precision Modifier",
+                "type": "Real32"
+            },
+            {
+                "name": "Movement Speed Modifier",
+                "type": "Real32"
+            },
+            {
+                "name": "(De)Activate Time",
+                "type": "Real32"
+            },
+            {
+                "name": "1st Person Stand Anim",
+                "type": "String32"
+            },
+            {
+                "name": "1st Person Move Anim",
+                "type": "String32"
+            },
+            {
+                "name": "1st Person Activate Anim",
+                "type": "String32"
+            },
+            {
+                "name": "1st Person DeActivate Anim",
+                "type": "String32"
+            },
+            {
+                "name": "3rd Person Stand Anim",
+                "type": "String32"
+            },
+            {
+                "name": "3rd Person Walk Anim",
+                "type": "String32"
+            },
+            {
+                "name": "3rd Person Run Anim",
+                "type": "String32"
+            },
+            {
+                "name": "3rd Person Crouch Stand Anim",
+                "type": "String32"
+            },
+            {
+                "name": "3rd Person Crouch Walk Anim",
+                "type": "String32"
+            },
+            {
+                "name": "3rd Person Activate Anim",
+                "type": "String32"
+            },
+            {
+                "name": "3rd Person DeActivate Anim",
+                "type": "String32"
+            },
+            {
+                "name": "Activate Sound",
+                "type": "String32"
+            },
+            {
+                "name": "DeActivate Sound",
+                "type": "String32"
+            },
+            {
+                "name": "TracerTexture",
+                "type": "String16"
+            },
+            {
+                "name": "TracerVelocity(m/s)",
+                "type": "Real32"
+            },
+            {
+                "name": "Primary Fire TaskType",
+                "type": "EnumInt32"
+            },
+            {
+                "name": "Primary Force Reload",
+                "type": "bool8"
+            },
+            {
+                "name": "Primary Reload rounds individiually",
+                "type": "bool8"
+            },
+            {
+                "name": "Secondary Fire TaskType",
+                "type": "EnumInt32"
+            },
+            {
+                "name": "Secondary Force Reload",
+                "type": "bool8"
+            },
+            {
+                "name": "Secondary Reload rounds individiually",
+                "type": "bool8"
+            },
+            {
+                "name": "Selectable When Empty",
+                "type": "bool8"
+            },
+            {
+                "name": "Pickup sprite",
+                "type": "String256"
+            },
+            {
+                "name": "Laser Dot",
+                "type": "bool8"
+            },
+            {
+                "name": "Laser Dot Always On",
+                "type": "bool8"
+            },
+            {
+                "name": "Netshop price",
+                "type": "Int32"
+            },
+            {
+                "name": "Bad Guys can buy",
+                "type": "bool8"
+            },
+            {
+                "name": "Good Guys can buy",
+                "type": "bool8"
+            },
+            {
+                "name": "Netshop category",
+                "type": "Int32"
+            },
+            {
+                "name": "Netshop slot position",
+                "type": "Int32"
+            },
+            {
+                "name": "Smoke Particle Size",
+                "type": "Real32"
+            },
+            {
+                "name": "Can weapon be dropped in 1P game",
+                "type": "bool8"
+            }
+        ]
+    },
+    {
+        "task_type": "WeaponTypeContainer",
+        "fields": []
+    },
+    {
+        "task_type": "WeaponTypeParameterContainer",
+        "fields": [
+            {
+                "name": "Parameter ID",
+                "type": "Int32"
+            }
+        ]
+    },
+    {
+        "task_type": "Zoom",
+        "fields": [
+            {
+                "name": "Minimum FOV",
+                "type": "Degrees"
+            },
+            {
+                "name": "Maximum FOV",
+                "type": "Degrees"
+            },
+            {
+                "name": "Zoom Step Factor",
+                "type": "Real32"
+            },
+            {
+                "name": "Overlay QTaskType",
+                "type": "EnumInt32"
+            },
+            {
+                "name": "Loop Sound",
+                "type": "bool8"
+            },
+            {
+                "name": "Sound",
+                "type": "String32"
+            },
+            {
+                "name": "Stand Breath Offset (degrees)",
+                "type": "Real32"
+            },
+            {
+                "name": "Crouch Breath Offset (degrees)",
+                "type": "Real32"
+            },
+            {
+                "name": "Flat Breath Offset (degrees)",
+                "type": "Real32"
+            }
+        ]
+    },
+    {
+        "task_type": "Gun",
+        "fields": [
+            {
+                "name": "AmmoType ID",
+                "type": "EnumInt32"
+            },
+            {
+                "name": "Ammo Display Type",
+                "type": "EnumInt32"
+            },
+            {
+                "name": "Bullets Per Round",
+                "type": "Int32"
+            },
+            {
+                "name": "Rounds Per Clip",
+                "type": "Int32"
+            },
+            {
+                "name": "Rounds Per Minute",
+                "type": "Int32"
+            },
+            {
+                "name": "Effective Range (Meters)",
+                "type": "Real32"
+            },
+            {
+                "name": "Reload Time (In Seconds)",
+                "type": "Real32"
+            },
+            {
+                "name": "Muzzle Velocity (m/s)",
+                "type": "Real32"
+            },
+            {
+                "name": "Muzzle flash front sprite",
+                "type": "String32"
+            },
+            {
+                "name": "Muzzle flash side sprite",
+                "type": "String32"
+            },
+            {
+                "name": "Muzzle flash size",
+                "type": "Real32"
+            },
+            {
+                "name": "Min Alpha Kickback (In Degress)",
+                "type": "Real32"
+            },
+            {
+                "name": "Max Alpha Kickback (In Degress)",
+                "type": "Real32"
+            },
+            {
+                "name": "Min Gamma Kickback (In Degress)",
+                "type": "Real32"
+            },
+            {
+                "name": "Max Gamma Kickback (In Degress)",
+                "type": "Real32"
+            },
+            {
+                "name": "Kickback factor floor",
+                "type": "Real32"
+            },
+            {
+                "name": "Kickback factor attack time",
+                "type": "Real32"
+            },
+            {
+                "name": "Kickback factor acceleration",
+                "type": "Real32"
+            },
+            {
+                "name": "Kickback damping factor",
+                "type": "Real32"
+            },
+            {
+                "name": "Crosshair damping factor",
+                "type": "Real32"
+            },
+            {
+                "name": "Projectile TaskType",
+                "type": "EnumInt32"
+            },
+            {
+                "name": "Bullet casing model",
+                "type": "String32"
+            },
+            {
+                "name": "1st Person Fire Anim",
+                "type": "String32"
+            },
+            {
+                "name": "1st Person Fire Hold Anim",
+                "type": "String32"
+            },
+            {
+                "name": "1st Person Fire Release Anim",
+                "type": "String32"
+            },
+            {
+                "name": "1st Person Reload Start Anim",
+                "type": "String32"
+            },
+            {
+                "name": "1st Person Reload Hold Anim",
+                "type": "String32"
+            },
+            {
+                "name": "1st Person Reload End Anim",
+                "type": "String32"
+            },
+            {
+                "name": "3rd Person Fire Anim",
+                "type": "String32"
+            },
+            {
+                "name": "3rd Person Fire Hold Anim",
+                "type": "String32"
+            },
+            {
+                "name": "3rd Person Fire Release Anim",
+                "type": "String32"
+            },
+            {
+                "name": "3rd Person Reload Start Anim",
+                "type": "String32"
+            },
+            {
+                "name": "3rd Person Reload Hold Anim",
+                "type": "String32"
+            },
+            {
+                "name": "3rd Person Reload End Anim",
+                "type": "String32"
+            },
+            {
+                "name": "Fire Sound 1",
+                "type": "String32"
+            },
+            {
+                "name": "Fire Sound 11",
+                "type": "String32"
+            },
+            {
+                "name": "Fire Sound 12",
+                "type": "String32"
+            },
+            {
+                "name": "Play Fire Sound Looped",
+                "type": "bool8"
+            },
+            {
+                "name": "Play Fire Sound Looped1",
+                "type": "bool8"
+            },
+            {
+                "name": "Play Fire Sound Looped2",
+                "type": "bool8"
+            },
+            {
+                "name": "Fire Sound 2",
+                "type": "String32"
+            },
+            {
+                "name": "AI Detection Range",
+                "type": "EnumReal32"
+            },
+            {
+                "name": "Count bullets per round as rounds",
+                "type": "bool8"
+            },
+            {
+                "name": "Bullets per round Spread (In Degrees)",
+                "type": "Real32"
+            }
+        ]
+    },
+    {
+        "task_type": "ProjectileLauncher",
+        "fields": [
+            {
+                "name": "Create On Release",
+                "type": "bool8"
+            },
+            {
+                "name": "Ammo Type",
+                "type": "EnumInt32"
+            },
+            {
+                "name": "Rounds Per Minute",
+                "type": "Int32"
+            },
+            {
+                "name": "Speed (m/s)",
+                "type": "Real32"
+            },
+            {
+                "name": "Effective Range (meters)",
+                "type": "Real32"
+            },
+            {
+                "name": "Max Hold Time (seconds)",
+                "type": "Real32"
+            },
+            {
+                "name": "Explode Time (seconds)",
+                "type": "Real32"
+            },
+            {
+                "name": "1st Fire Anim",
+                "type": "String32"
+            },
+            {
+                "name": "1st Fire Last Anim",
+                "type": "String32"
+            },
+            {
+                "name": "3rd Fire Anim",
+                "type": "String32"
+            },
+            {
+                "name": "3rd Fire Last Anim",
+                "type": "String32"
+            },
+            {
+                "name": "Fire Sound",
+                "type": "String32"
+            },
+            {
+                "name": "Fire Hold Sound",
+                "type": "String32"
+            },
+            {
+                "name": "Fire Release Sound",
+                "type": "String32"
+            },
+            {
+                "name": "Projectile QTaskType",
+                "type": "EnumInt32"
+            }
+        ]
+    },
+    {
+        "task_type": "C4Bomb",
+        "fields": [
+            {
+                "name": "AmmoType",
+                "type": "EnumInt32"
+            },
+            {
+                "name": "Rounds Per Minute",
+                "type": "Int32"
+            },
+            {
+                "name": "Effective Range (meters)",
+                "type": "Real32"
+            },
+            {
+                "name": "Time before arming (seconds)",
+                "type": "Real32"
+            },
+            {
+                "name": "Explosion radius (meters)",
+                "type": "Real32"
+            },
+            {
+                "name": "1st Fire Anim",
+                "type": "String32"
+            },
+            {
+                "name": "3rd Fire Anim",
+                "type": "String32"
+            },
+            {
+                "name": "Fire Sound",
+                "type": "String32"
+            }
+        ]
+    },
+    {
+        "task_type": "ProximityMine",
+        "fields": [
+            {
+                "name": "AmmoType",
+                "type": "EnumInt32"
+            },
+            {
+                "name": "Rounds Per Minute",
+                "type": "Int32"
+            },
+            {
+                "name": "Effective Range (meters)",
+                "type": "Real32"
+            },
+            {
+                "name": "Time before arming (seconds)",
+                "type": "Real32"
+            },
+            {
+                "name": "Countdown time (seconds)",
+                "type": "Real32"
+            },
+            {
+                "name": "Activate radius (meters)",
+                "type": "Real32"
+            },
+            {
+                "name": "Explosion radius (meters)",
+                "type": "Real32"
+            },
+            {
+                "name": "1st Fire Anim",
+                "type": "String32"
+            },
+            {
+                "name": "3rd Fire Anim",
+                "type": "String32"
+            },
+            {
+                "name": "Fire Sound",
+                "type": "String32"
+            }
+        ]
+    },
+    {
+        "task_type": "RemoteMine",
+        "fields": [
+            {
+                "name": "AmmoType",
+                "type": "EnumInt32"
+            },
+            {
+                "name": "Rounds Per Minute",
+                "type": "Int32"
+            },
+            {
+                "name": "Effective Range (meters)",
+                "type": "Real32"
+            },
+            {
+                "name": "Time before arming (seconds)",
+                "type": "Real32"
+            },
+            {
+                "name": "Countdown time (seconds)",
+                "type": "Real32"
+            },
+            {
+                "name": "Activate radius (meters)",
+                "type": "Real32"
+            },
+            {
+                "name": "Explosion radius (meters)",
+                "type": "Real32"
+            },
+            {
+                "name": "1st Fire Anim",
+                "type": "String32"
+            },
+            {
+                "name": "3rd Fire Anim",
+                "type": "String32"
+            },
+            {
+                "name": "Fire Sound",
+                "type": "String32"
+            }
+        ]
+    },
+    {
+        "task_type": "Medipack",
+        "fields": [
+            {
+                "name": "Factor of human max damage to add for each round",
+                "type": "Real32"
+            },
+            {
+                "name": "Rounds Per minute",
+                "type": "Int32"
+            },
+            {
+                "name": "AmmoType",
+                "type": "EnumInt32"
+            },
+            {
+                "name": "1st Fire Anim",
+                "type": "String32"
+            },
+            {
+                "name": "1st Fire Hold Anim",
+                "type": "String32"
+            },
+            {
+                "name": "1st Fire Release Anim",
+                "type": "String32"
+            },
+            {
+                "name": "3rd Fire Anim",
+                "type": "String32"
+            },
+            {
+                "name": "3rd Fire Hold Anim",
+                "type": "String32"
+            },
+            {
+                "name": "3rd Fire Release Anim",
+                "type": "String32"
+            },
+            {
+                "name": "Fire Sound",
+                "type": "String32"
+            },
+            {
+                "name": "Hold Sound",
+                "type": "String32"
+            },
+            {
+                "name": "Release Sound",
+                "type": "String32"
+            }
+        ]
+    },
+    {
+        "task_type": "Knife",
+        "fields": [
+            {
+                "name": "Traces",
+                "type": "Int32"
+            },
+            {
+                "name": "Trace FOV",
+                "type": "Degrees"
+            },
+            {
+                "name": "Delay (seconds)",
+                "type": "Real32"
+            },
+            {
+                "name": "Damage Factor",
+                "type": "Degrees"
+            },
+            {
+                "name": "1st Fire Anim",
+                "type": "String32"
+            },
+            {
+                "name": "1st Fire Anim1",
+                "type": "String32"
+            },
+            {
+                "name": "1st Fire Anim2",
+                "type": "String32"
+            },
+            {
+                "name": "3rd Fire Anim",
+                "type": "String32"
+            },
+            {
+                "name": "Fire Sound",
+                "type": "String32"
+            }
+        ]
+    },
+    {
+        "task_type": "LaserDesignator",
+        "fields": [
+            {
+                "name": "Range",
+                "type": "Real32"
+            },
+            {
+                "name": "1st person fire anim",
+                "type": "String32"
+            },
+            {
+                "name": "1st person fire hold anim",
+                "type": "String32"
+            },
+            {
+                "name": "1st person fire release anim",
+                "type": "String32"
+            }
+        ]
+    },
+    {
+        "task_type": "PullPin",
+        "fields": [
+            {
+                "name": "1st Fire Anim",
+                "type": "String32"
+            },
+            {
+                "name": "3rd Fire Anim",
+                "type": "String32"
+            },
+            {
+                "name": "Explode Time (seconds)",
+                "type": "Real32"
+            }
+        ]
+    }
+]

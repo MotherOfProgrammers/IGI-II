@@ -1,0 +1,181 @@
+{
+    "weapon_id": "WEAPON_ID_G11",
+    "data": {
+        "task_id": -1,
+        "type": "WeaponType",
+        "args": [
+            "WEAPON_ID_G11",
+            "WEAPON_ID_G11",
+            "G11",
+            "g11",
+            "WEAPONS:g11.spr",
+            "WEAPONTYPE_GUN",
+            "WEAPONCATEGORY_PRIMARY",
+            "SIGHTDISPLAYTYPE_ASSAULTRIFLE",
+            "145_01_1",
+            1,
+            1,
+            1,
+            1,
+            "",
+            "",
+            "",
+            0,
+            0,
+            0,
+            0.44999998807907104,
+            3.5,
+            2.799999952316284,
+            0.30000001192092896,
+            2.799999952316284,
+            0.20000000298023224,
+            6,
+            2,
+            1.2000000476837158,
+            0.15000000596046448,
+            0.6000000238418579,
+            "walk_g11_1st",
+            "run_g11_1st",
+            "weaponraise_g11_1st",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            300,
+            "TASKTYPE_GUN",
+            "FALSE",
+            "FALSE",
+            "TASKTYPE_ZOOM",
+            "FALSE",
+            "FALSE",
+            "TRUE",
+            "WEAPONS:g11_pickup.spr",
+            "FALSE",
+            "FALSE",
+            5500,
+            "TRUE",
+            "TRUE",
+            3,
+            5,
+            0.03999999910593033,
+            "TRUE",
+            {
+                "task_id": -1,
+                "type": "WeaponTypeParameterContainer",
+                "args": [
+                    "Primary Parameters",
+                    0,
+                    {
+                        "task_id": -1,
+                        "type": "Gun",
+                        "args": [
+                            "",
+                            "AMMO_ID_G11CLIP",
+                            "AMMODISPLAYTYPE_NORMAL",
+                            3,
+                            50,
+                            200,
+                            400,
+                            3.700000047683716,
+                            930,
+                            "flash_blast.tex",
+                            "flash_side5.tex",
+                            0.15000000596046448,
+                            3,
+                            5,
+                            -1,
+                            -1.2000000476837158,
+                            1,
+                            4,
+                            10,
+                            0.15000000596046448,
+                            0.125,
+                            "TASKTYPE_GUNSHOT",
+                            "",
+                            "fire_g11_1st",
+                            "",
+                            "",
+                            "reload_g11_1st",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "g11_shot_1",
+                            "",
+                            "",
+                            "FALSE",
+                            "FALSE",
+                            "FALSE",
+                            "",
+                            "HUMANAI_DETECTIONEVENT_GUNSHOT_RANGE",
+                            "TRUE",
+                            0.029999999329447746,
+                            {
+                                "task_id": -1,
+                                "type": "TagItemReal32",
+                                "args": [
+                                    "Damage Factor",
+                                    "Damage Factor",
+                                    0.30000001192092896
+                                ]
+                            },
+                            {
+                                "task_id": -1,
+                                "type": "TagItemReal32",
+                                "args": [
+                                    "Penetration Power",
+                                    "Penetration Power",
+                                    14
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "task_id": -1,
+                "type": "WeaponTypeParameterContainer",
+                "args": [
+                    "Secondary Parameters",
+                    1,
+                    {
+                        "task_id": -1,
+                        "type": "Zoom",
+                        "args": [
+                            "",
+                            45,
+                            45,
+                            1,
+                            "TASKTYPE_G11SNIPEROVERLAY",
+                            "FALSE",
+                            "",
+                            0,
+                            0,
+                            0,
+                            {
+                                "task_id": -1,
+                                "type": "TagItemBool8",
+                                "args": [
+                                    "Infrared on/off",
+                                    "Infrared on/off",
+                                    "FALSE"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

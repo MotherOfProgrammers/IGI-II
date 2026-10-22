@@ -1,0 +1,181 @@
+{
+    "weapon_id": "WEAPON_ID_DRAGUNOV",
+    "data": {
+        "task_id": -1,
+        "type": "WeaponType",
+        "args": [
+            "WEAPON_ID_DRAGUNOV",
+            "WEAPON_ID_DRAGUNOV",
+            "SVD DRAGUNOV",
+            "dragunov",
+            "WEAPONS:dragunov.spr",
+            "WEAPONTYPE_GUN",
+            "WEAPONCATEGORY_PRIMARY",
+            "SIGHTDISPLAYTYPE_SNIPERRIFLE",
+            "137_01_1",
+            1,
+            1,
+            1,
+            1,
+            "",
+            "",
+            "",
+            0,
+            0,
+            0,
+            0.44999998807907104,
+            7,
+            5,
+            0.05000000074505806,
+            5,
+            0.0005000000237487257,
+            3,
+            2,
+            2,
+            0.2199999988079071,
+            0.699999988079071,
+            "walk_dragunov_1st",
+            "run_dragunov_1st",
+            "weaponraise_dragunov_1st",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            300,
+            "TASKTYPE_GUN",
+            "FALSE",
+            "FALSE",
+            "TASKTYPE_ZOOM",
+            "FALSE",
+            "FALSE",
+            "TRUE",
+            "WEAPONS:dragunov_pickup.spr",
+            "FALSE",
+            "FALSE",
+            8000,
+            "TRUE",
+            "FALSE",
+            4,
+            1,
+            0.03999999910593033,
+            "TRUE",
+            {
+                "task_id": -1,
+                "type": "WeaponTypeParameterContainer",
+                "args": [
+                    "Primary Parameters",
+                    0,
+                    {
+                        "task_id": -1,
+                        "type": "Gun",
+                        "args": [
+                            "",
+                            "AMMO_ID_DRAGUNOVCLIP",
+                            "AMMODISPLAYTYPE_CLIP",
+                            1,
+                            10,
+                            30,
+                            1200,
+                            3,
+                            830,
+                            "flash_split.tex",
+                            "flash_side.tex",
+                            0.25,
+                            1.5,
+                            4,
+                            -0.30000001192092896,
+                            -0.5,
+                            1,
+                            5,
+                            2,
+                            0.07500000298023224,
+                            0.07500000298023224,
+                            "TASKTYPE_GUNSHOT",
+                            "1123_04_1",
+                            "fire_dragunov_1st",
+                            "",
+                            "",
+                            "reload_dragunov_1st",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "dragunov_shot_1",
+                            "",
+                            "",
+                            "FALSE",
+                            "FALSE",
+                            "FALSE",
+                            "",
+                            "HUMANAI_DETECTIONEVENT_GUNSHOT_RANGE",
+                            "FALSE",
+                            0,
+                            {
+                                "task_id": -1,
+                                "type": "TagItemReal32",
+                                "args": [
+                                    "Damage Factor",
+                                    "Damage Factor",
+                                    0.800000011920929
+                                ]
+                            },
+                            {
+                                "task_id": -1,
+                                "type": "TagItemReal32",
+                                "args": [
+                                    "Penetration Power",
+                                    "Penetration Power",
+                                    15
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "task_id": -1,
+                "type": "WeaponTypeParameterContainer",
+                "args": [
+                    "Secondary Parameters",
+                    1,
+                    {
+                        "task_id": -1,
+                        "type": "Zoom",
+                        "args": [
+                            "",
+                            7.5,
+                            30,
+                            2,
+                            "TASKTYPE_DRAGUNOVSNIPEROVERLAY",
+                            "FALSE",
+                            "sniper_zoom",
+                            0.30000001192092896,
+                            0.20000000298023224,
+                            0.15000000596046448,
+                            {
+                                "task_id": -1,
+                                "type": "TagItemBool8",
+                                "args": [
+                                    "Infrared on/off",
+                                    "Infrared on/off",
+                                    "FALSE"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

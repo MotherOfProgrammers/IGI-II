@@ -1,0 +1,7 @@
+Task_New(-1, "WeaponType", "WEAPON_ID_M2HB", "WEAPON_ID_M2HB", "M2HB", "m2hb", "", WEAPONTYPE_GUN, WEAPONCATEGORY_NONE, SIGHTDISPLAYTYPE_MINIMI, "112_01_1", 1, 10000, 1, 1, "", "", "", 0, 0, 0, 0.20000000298023224, 0.20000000298023224, 0.20000000298023224, 0.20000000298023224, 0.20000000298023224, 
+0.20000000298023224, 0.20000000298023224, 0, 0, 0, 0.5, "", "", "", "", "", "", "", "", "", "", "", "", "", "yellglow", 600, TASKTYPE_GUN, FALSE, FALSE, TASKTYPE_NONE, FALSE, FALSE, FALSE, "", FALSE, FALSE, 7000, FALSE, FALSE, -1, -1, 0.05999999865889549, TRUE, 
+	Task_New(-1, "WeaponTypeParameterContainer", "Primary Parameters", 0, 
+		Task_New(-1, "Gun", "", AMMO_ID_M2HBCLIP, AMMODISPLAYTYPE_CLIP, 1, 10000, 500, 500, 6, 930, "flash_weak.tex", "flash_side2.tex", 0.15000000596046448, 0.6000000238418579, 0.6000000238418579, 0.6000000238418579, 0.6000000238418579, 1, 5, 2, 0.5, 0.5, TASKTYPE_GUNSHOT, "1123_05_1", "", "", "", "", "", 
+"", "", "", "", "", "", "", "m2hb_loop", "", "", TRUE, FALSE, FALSE, "m2hb_loop_e", HUMANAI_DETECTIONEVENT_GUNSHOT_RANGE, FALSE, 0, 
+			Task_New(-1, "TagItemReal32", "Damage Factor", "Damage Factor", 1.5), 
+			Task_New(-1, "TagItemReal32", "Penetration Power", "Penetration Power", 18))));

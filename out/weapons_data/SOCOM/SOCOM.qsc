@@ -1,0 +1,10 @@
+Task_New(-1, "WeaponType", "WEAPON_ID_SOCOM", "WEAPON_ID_SOCOM", "SOCOM", "socom", "WEAPONS:socom.spr", WEAPONTYPE_PISTOL, WEAPONCATEGORY_SIDEARM, SIGHTDISPLAYTYPE_PISTOL, "103_01_1", 1, 1, 1, 1, "", "", "", 0, 0, 0, 0.6000000238418579, 1.100000023841858, 0.8999999761581421, 0.44999998807907104, 
+0.8999999761581421, 0.3499999940395355, 2, 0.6000000238418579, 0.6000000238418579, 0.10000000149011612, 0.4000000059604645, "walk_socom_1st", "run_socom_1st", "weaponraise_socom_1st", "", "", "", "", "", "", "", "", "", "", "", 75, TASKTYPE_GUN, FALSE, FALSE, TASKTYPE_LASERDOTSWITCH, FALSE, FALSE, 
+TRUE, "WEAPONS:socom_pickup.spr", TRUE, FALSE, 1250, TRUE, TRUE, 1, 5, 0.03999999910593033, TRUE, 
+	Task_New(-1, "WeaponTypeParameterContainer", "Primary Parameters", 0, 
+		Task_New(-1, "Gun", "", AMMO_ID_SOCOMCLIP, AMMODISPLAYTYPE_NORMAL, 1, 12, 300, 200, 2.4000000953674316, 260, "flash_SD.tex", "", 0.25, 1, 1, -0.4000000059604645, -0.4000000059604645, 1, 1, 10, 0.20000000298023224, 0.20000000298023224, TASKTYPE_GUNSHOT, "1123_02_1", "fire_socom_1st", "", "", 
+"reload_socom_1st", "", "", "", "", "", "", "", "", "socom_shot_1", "", "", FALSE, FALSE, FALSE, "", HUMANAI_DETECTIONEVENT_GUNSHOT_SILENCED_RANGE, FALSE, 0, 
+			Task_New(-1, "TagItemReal32", "Damage Factor", "Damage Factor", 0.28999999165534973), 
+			Task_New(-1, "TagItemReal32", "Penetration Power", "Penetration Power", 4))), 
+	Task_New(-1, "WeaponTypeParameterContainer", "Secondary Parameters", 1, 
+		Task_New(-1, "LaserDotSwitch", "")));

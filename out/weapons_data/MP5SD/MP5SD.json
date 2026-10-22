@@ -1,0 +1,163 @@
+{
+    "weapon_id": "WEAPON_ID_MP5SD",
+    "data": {
+        "task_id": -1,
+        "type": "WeaponType",
+        "args": [
+            "WEAPON_ID_MP5SD",
+            "WEAPON_ID_MP5SD",
+            "MP5A3",
+            "mp5",
+            "WEAPONS:mp5.spr",
+            "WEAPONTYPE_PISTOL",
+            "WEAPONCATEGORY_PRIMARY",
+            "SIGHTDISPLAYTYPE_SMG",
+            "102_01_1",
+            3,
+            30,
+            3,
+            1,
+            "auto",
+            "3shot",
+            "1shot",
+            0,
+            0.09000000357627869,
+            0.009999999776482582,
+            0.8999999761581421,
+            2,
+            1.649999976158142,
+            0.699999988079071,
+            1.649999976158142,
+            0.6000000238418579,
+            2.799999952316284,
+            0.800000011920929,
+            0.800000011920929,
+            0.10999999940395355,
+            0.6000000238418579,
+            "walk_mp5_1st",
+            "run_mp5_1st",
+            "weaponraise_mp5_1st",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            75,
+            "TASKTYPE_GUN",
+            "FALSE",
+            "FALSE",
+            "TASKTYPE_FIREMODE",
+            "FALSE",
+            "FALSE",
+            "TRUE",
+            "WEAPONS:mp5_pickup.spr",
+            "FALSE",
+            "FALSE",
+            2400,
+            "FALSE",
+            "TRUE",
+            2,
+            3,
+            0.03999999910593033,
+            "TRUE",
+            {
+                "task_id": -1,
+                "type": "WeaponTypeParameterContainer",
+                "args": [
+                    "Primary Parameters",
+                    0,
+                    {
+                        "task_id": -1,
+                        "type": "Gun",
+                        "args": [
+                            "",
+                            "AMMO_ID_MP5CLIP",
+                            "AMMODISPLAYTYPE_CLIP",
+                            1,
+                            30,
+                            800,
+                            260,
+                            2.799999952316284,
+                            400,
+                            "flash_smg.tex",
+                            "flash_side2.tex",
+                            0.20000000298023224,
+                            1.7999999523162842,
+                            2.0999999046325684,
+                            -0.8999999761581421,
+                            -1.100000023841858,
+                            0.800000011920929,
+                            7,
+                            8,
+                            0.20000000298023224,
+                            0.20000000298023224,
+                            "TASKTYPE_GUNSHOT",
+                            "1123_01_1",
+                            "fire_mp5_1st",
+                            "",
+                            "",
+                            "reload_mp5_1st",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "mp5_loop",
+                            "mp5_burst",
+                            "mp5_one",
+                            "TRUE",
+                            "FALSE",
+                            "FALSE",
+                            "mp5_loop_e",
+                            "HUMANAI_DETECTIONEVENT_GUNSHOT_PISTOL_RANGE",
+                            "FALSE",
+                            0,
+                            {
+                                "task_id": -1,
+                                "type": "TagItemReal32",
+                                "args": [
+                                    "Damage Factor",
+                                    "Damage Factor",
+                                    0.28999999165534973
+                                ]
+                            },
+                            {
+                                "task_id": -1,
+                                "type": "TagItemReal32",
+                                "args": [
+                                    "Penetration Power",
+                                    "Penetration Power",
+                                    5
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "task_id": -1,
+                "type": "WeaponTypeParameterContainer",
+                "args": [
+                    "Secondary Parameters",
+                    1,
+                    {
+                        "task_id": -1,
+                        "type": "FireMode",
+                        "args": [
+                            ""
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

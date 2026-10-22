@@ -1,0 +1,10 @@
+Task_New(-1, "WeaponType", "WEAPON_ID_BARRET", "WEAPON_ID_BARRET", "M82A1", "barett", "WEAPONS:barrett.spr", WEAPONTYPE_GUN, WEAPONCATEGORY_PRIMARY, SIGHTDISPLAYTYPE_SNIPERRIFLE, "142_01_1", 1, 1, 1, 1, "", "", "", 0, 0, 0, 0.6000000238418579, 8, 6, 0.05000000074505806, 6, 0.0005000000237487257, 3, 2, 
+2, 0.25, 0.699999988079071, "walk_barett_1st", "run_barett_1st", "weaponraise_barett_1st", "", "", "", "", "", "", "", "", "", "", "", 300, TASKTYPE_GUN, FALSE, FALSE, TASKTYPE_ZOOM, FALSE, FALSE, TRUE, "WEAPONS:barrett_pickup.spr", FALSE, FALSE, 13500, TRUE, TRUE, 4, 3, 0.03999999910593033, TRUE, 
+	Task_New(-1, "WeaponTypeParameterContainer", "Primary Parameters", 0, 
+		Task_New(-1, "Gun", "", AMMO_ID_BARRETCLIP, AMMODISPLAYTYPE_NORMAL, 1, 10, 40, 2800, 5, 850, "flash_split.tex", "flash_side.tex", 0.4000000059604645, 1.5, 4, -0.30000001192092896, -0.5, 1, 5, 2, 0.05000000074505806, 0.05000000074505806, TASKTYPE_GUNSHOT, "1123_05_1", "fire_barett_1st", "", "", 
+"reload_barett_1st", "", "", "", "", "", "", "", "", "barrett_shot_1", "", "", FALSE, FALSE, FALSE, "", HUMANAI_DETECTIONEVENT_GUNSHOT_RANGE, FALSE, 0, 
+			Task_New(-1, "TagItemReal32", "Damage Factor", "Damage Factor", 1.2999999523162842), 
+			Task_New(-1, "TagItemReal32", "Penetration Power", "Penetration Power", 18))), 
+	Task_New(-1, "WeaponTypeParameterContainer", "Secondary Parameters", 1, 
+		Task_New(-1, "Zoom", "", 3, 20, 2, TASKTYPE_SNIPEROVERLAY, FALSE, "sniper_zoom", 0.4000000059604645, 0.30000001192092896, 0.20000000298023224, 
+			Task_New(-1, "TagItemBool8", "Infrared on/off", "Infrared on/off", FALSE))));

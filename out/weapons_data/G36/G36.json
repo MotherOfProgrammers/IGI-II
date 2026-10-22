@@ -1,0 +1,163 @@
+{
+    "weapon_id": "WEAPON_ID_G36",
+    "data": {
+        "task_id": -1,
+        "type": "WeaponType",
+        "args": [
+            "WEAPON_ID_G36",
+            "WEAPON_ID_G36",
+            "G36",
+            "g36",
+            "WEAPONS:g36.spr",
+            "WEAPONTYPE_GUN",
+            "WEAPONCATEGORY_PRIMARY",
+            "SIGHTDISPLAYTYPE_ASSAULTRIFLE",
+            "105_01_1",
+            3,
+            30,
+            3,
+            1,
+            "auto",
+            "3shot",
+            "1shot",
+            0,
+            0.2199999988079071,
+            0.05999999865889549,
+            0.6000000238418579,
+            3.4000000953674316,
+            2.5,
+            0.44999998807907104,
+            2.5,
+            0.3499999940395355,
+            6,
+            2,
+            1,
+            0.15000000596046448,
+            0.6000000238418579,
+            "walk_g36_1st",
+            "run_g36_1st",
+            "weaponraise_g36_1st",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "yellglow",
+            300,
+            "TASKTYPE_GUN",
+            "FALSE",
+            "FALSE",
+            "TASKTYPE_FIREMODE",
+            "FALSE",
+            "FALSE",
+            "TRUE",
+            "WEAPONS:g36_pickup.spr",
+            "TRUE",
+            "FALSE",
+            3200,
+            "FALSE",
+            "TRUE",
+            3,
+            2,
+            0.03999999910593033,
+            "TRUE",
+            {
+                "task_id": -1,
+                "type": "WeaponTypeParameterContainer",
+                "args": [
+                    "Primary Parameters",
+                    0,
+                    {
+                        "task_id": -1,
+                        "type": "Gun",
+                        "args": [
+                            "",
+                            "AMMO_ID_G36CLIP",
+                            "AMMODISPLAYTYPE_CLIP",
+                            1,
+                            30,
+                            750,
+                            450,
+                            3.0999999046325684,
+                            780,
+                            "flash_cross.tex",
+                            "flash_side3.tex",
+                            0.25,
+                            1.899999976158142,
+                            2.0999999046325684,
+                            -1,
+                            -1.2000000476837158,
+                            1,
+                            6,
+                            7,
+                            0.125,
+                            0.125,
+                            "TASKTYPE_GUNSHOT",
+                            "1123_03_1",
+                            "fire_g36_1st",
+                            "",
+                            "",
+                            "reload_g36_1st",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "g36_loop",
+                            "g36_burst",
+                            "g36_one",
+                            "TRUE",
+                            "FALSE",
+                            "FALSE",
+                            "g36_loop_e",
+                            "HUMANAI_DETECTIONEVENT_GUNSHOT_RANGE",
+                            "FALSE",
+                            0,
+                            {
+                                "task_id": -1,
+                                "type": "TagItemReal32",
+                                "args": [
+                                    "Damage Factor",
+                                    "Damage Factor",
+                                    0.5
+                                ]
+                            },
+                            {
+                                "task_id": -1,
+                                "type": "TagItemReal32",
+                                "args": [
+                                    "Penetration Power",
+                                    "Penetration Power",
+                                    12
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "task_id": -1,
+                "type": "WeaponTypeParameterContainer",
+                "args": [
+                    "Secondary Parameters",
+                    1,
+                    {
+                        "task_id": -1,
+                        "type": "FireMode",
+                        "args": [
+                            ""
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

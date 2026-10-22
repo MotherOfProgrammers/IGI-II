@@ -1,0 +1,102 @@
+{
+    "weapon_id": "WEAPON_ID_C4BOMB",
+    "data": {
+        "task_id": -1,
+        "type": "WeaponType",
+        "args": [
+            "WEAPON_ID_C4BOMB",
+            "WEAPON_ID_C4BOMB",
+            "C4BOMB",
+            "c4bomb",
+            "WEAPONS:c4.spr",
+            "WEAPONTYPE_C4BOMB",
+            "WEAPONCATEGORY_C4",
+            "SIGHTDISPLAYTYPE_NONE",
+            "113_01_1",
+            1,
+            1,
+            1,
+            1,
+            "",
+            "",
+            "",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.4000000059604645,
+            "walk_c4_1st",
+            "run_c4_1st",
+            "weaponraise_c4_1st",
+            "",
+            "stand_c4",
+            "",
+            "",
+            "",
+            "",
+            "weaponraise_c4",
+            "",
+            "",
+            "",
+            "yellglow",
+            75,
+            "TASKTYPE_C4BOMB",
+            "FALSE",
+            "FALSE",
+            "TASKTYPE_NONE",
+            "FALSE",
+            "FALSE",
+            "FALSE",
+            "WEAPONS:c4_pickup.spr",
+            "FALSE",
+            "FALSE",
+            90,
+            "FALSE",
+            "FALSE",
+            -1,
+            -1,
+            0.03999999910593033,
+            "TRUE",
+            {
+                "task_id": -1,
+                "type": "WeaponTypeParameterContainer",
+                "args": [
+                    "Secondary Parameters",
+                    1
+                ]
+            },
+            {
+                "task_id": -1,
+                "type": "WeaponTypeParameterContainer",
+                "args": [
+                    "Primary Parameters",
+                    0,
+                    {
+                        "task_id": -1,
+                        "type": "C4Bomb",
+                        "args": [
+                            "",
+                            "AMMO_ID_C4BOMB",
+                            1,
+                            10,
+                            0.5,
+                            40,
+                            "fire_c4_1st",
+                            "fire_c4",
+                            ""
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

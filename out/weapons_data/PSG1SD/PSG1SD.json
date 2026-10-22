@@ -1,0 +1,181 @@
+{
+    "weapon_id": "WEAPON_ID_PSG1SD",
+    "data": {
+        "task_id": -1,
+        "type": "WeaponType",
+        "args": [
+            "WEAPON_ID_PSG1SD",
+            "WEAPON_ID_PSG1SD",
+            "PSG-1SD",
+            "psg",
+            "WEAPONS:psg-1SD.spr",
+            "WEAPONTYPE_GUN",
+            "WEAPONCATEGORY_PRIMARY",
+            "SIGHTDISPLAYTYPE_SNIPERRIFLE",
+            "153_01_1",
+            1,
+            1,
+            1,
+            1,
+            "",
+            "",
+            "",
+            0,
+            0,
+            0,
+            0.4000000059604645,
+            7,
+            5,
+            0.10000000149011612,
+            5,
+            0.0005000000237487257,
+            3,
+            2,
+            2,
+            0.2199999988079071,
+            0.699999988079071,
+            "walk_psg_1st",
+            "run_psg_1st",
+            "weaponraise_psg_1st",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            300,
+            "TASKTYPE_GUN",
+            "FALSE",
+            "FALSE",
+            "TASKTYPE_ZOOM",
+            "FALSE",
+            "FALSE",
+            "TRUE",
+            "WEAPONS:psg-1SD_pickup.spr",
+            "FALSE",
+            "FALSE",
+            7000,
+            "FALSE",
+            "FALSE",
+            -1,
+            -1,
+            0.03999999910593033,
+            "TRUE",
+            {
+                "task_id": -1,
+                "type": "WeaponTypeParameterContainer",
+                "args": [
+                    "Primary Parameters",
+                    0,
+                    {
+                        "task_id": -1,
+                        "type": "Gun",
+                        "args": [
+                            "",
+                            "AMMO_ID_PSG1SDCLIP",
+                            "AMMODISPLAYTYPE_CLIP",
+                            1,
+                            5,
+                            35,
+                            1750,
+                            3,
+                            830,
+                            "flash_SD.tex",
+                            "",
+                            0.25,
+                            1.5,
+                            4,
+                            -0.30000001192092896,
+                            -0.5,
+                            1,
+                            5,
+                            2,
+                            0.05000000074505806,
+                            0.05000000074505806,
+                            "TASKTYPE_GUNSHOT",
+                            "1123_04_1",
+                            "fire_psg_1st",
+                            "",
+                            "",
+                            "reload_psg_1st",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "psg1_shot_2",
+                            "",
+                            "",
+                            "FALSE",
+                            "FALSE",
+                            "FALSE",
+                            "glock_shot_2",
+                            "HUMANAI_DETECTIONEVENT_GUNSHOT_SILENCED_RANGE",
+                            "FALSE",
+                            0,
+                            {
+                                "task_id": -1,
+                                "type": "TagItemReal32",
+                                "args": [
+                                    "Damage Factor",
+                                    "Damage Factor",
+                                    0.800000011920929
+                                ]
+                            },
+                            {
+                                "task_id": -1,
+                                "type": "TagItemReal32",
+                                "args": [
+                                    "Penetration Power",
+                                    "Penetration Power",
+                                    16
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "task_id": -1,
+                "type": "WeaponTypeParameterContainer",
+                "args": [
+                    "Secondary Parameters",
+                    1,
+                    {
+                        "task_id": -1,
+                        "type": "Zoom",
+                        "args": [
+                            "",
+                            7.5,
+                            30,
+                            2,
+                            "TASKTYPE_PSG1SNIPEROVERLAY",
+                            "FALSE",
+                            "sniper_zoom",
+                            0.30000001192092896,
+                            0.20000000298023224,
+                            0.15000000596046448,
+                            {
+                                "task_id": -1,
+                                "type": "TagItemBool8",
+                                "args": [
+                                    "Infrared on/off",
+                                    "Infrared on/off",
+                                    "FALSE"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

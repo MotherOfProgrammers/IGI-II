@@ -1,0 +1,10 @@
+Task_New(-1, "WeaponType", "WEAPON_ID_HK104", "WEAPON_ID_HK104", "M1014", "m1014", "WEAPONS:m1014.spr", WEAPONTYPE_SHOTGUN, WEAPONCATEGORY_PRIMARY, SIGHTDISPLAYTYPE_SHOTGUN, "143_01_1", 1, 1, 1, 1, "", "", "", 0, 0, 0, 2.299999952316284, 2.799999952316284, 2.5999999046325684, 2, 2.5999999046325684, 
+1.7999999523162842, 3, 1.2000000476837158, 1.2000000476837158, 0.15000000596046448, 0.6000000238418579, "walk_m1014_1st", "run_m1014_1st", "weaponraise_m1014_1st", "", "", "", "", "", "", "", "", "", "", "", 75, TASKTYPE_GUN, FALSE, TRUE, TASKTYPE_KNIFE, FALSE, FALSE, TRUE, 
+"WEAPONS:m1014_pickup.spr", FALSE, FALSE, 3100, TRUE, TRUE, 5, 2, 0.03999999910593033, TRUE, 
+	Task_New(-1, "WeaponTypeParameterContainer", "Primary Parameters", 0, 
+		Task_New(-1, "Gun", "", AMMO_ID_XM1041CLIP, AMMODISPLAYTYPE_NORMAL, 8, 6, 200, 100, 3, 250, "flash_blast.tex", "flash_side5.tex", 0.11999999731779099, 12, 12, -1, -1, 1, 5, 2, 0.15000000596046448, 0.15000000596046448, TASKTYPE_GUNSHOT, "1112_01_1", "fire_m1014_1st", "", "", "reload_m1014_1st", 
+"reload_loop_m1014_1st", "reload_finish_m1014_1st", "", "", "", "", "", "", "m1014_shot_1", "", "", FALSE, FALSE, FALSE, "", HUMANAI_DETECTIONEVENT_GUNSHOT_RANGE, FALSE, 6, 
+			Task_New(-1, "TagItemReal32", "Damage Factor", "Damage Factor", 0.5), 
+			Task_New(-1, "TagItemReal32", "Penetration Power", "Penetration Power", 2.5))), 
+	Task_New(-1, "WeaponTypeParameterContainer", "Secondary Parameters", 1, 
+		Task_New(-1, "Knife", "", 3, 30, 0.5, 0.4000000059604645, "hitwithstock_m1014_1st", "", "", "fire_hitwithstock_m1014", "gunpunch_01")));

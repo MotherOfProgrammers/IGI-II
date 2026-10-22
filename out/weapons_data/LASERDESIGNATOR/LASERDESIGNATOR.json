@@ -1,0 +1,114 @@
+{
+    "weapon_id": "WEAPON_ID_LASERDESIGNATOR",
+    "data": {
+        "task_id": -1,
+        "type": "WeaponType",
+        "args": [
+            "WEAPON_ID_LASERDESIGNATOR",
+            "WEAPON_ID_LASERDESIGNATOR",
+            "LASER DESIGNATOR",
+            "laserdesignator",
+            "WEAPONS:laser.spr",
+            "WEAPONTYPE_SPECIAL",
+            "WEAPONCATEGORY_LASERDESIGNATOR",
+            "SIGHTDISPLAYTYPE_NONE",
+            "148_01_1",
+            1,
+            1,
+            1,
+            1,
+            "",
+            "",
+            "",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.4000000059604645,
+            "walk_laserdesignator_1st",
+            "run_laserdesignator_1st",
+            "weaponraise_laserdesignator_1st",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            75,
+            "TASKTYPE_LASERDESIGNATOR",
+            "FALSE",
+            "FALSE",
+            "TASKTYPE_ZOOM",
+            "FALSE",
+            "FALSE",
+            "FALSE",
+            "WEAPONS:laser_pickup.spr",
+            "TRUE",
+            "FALSE",
+            90,
+            "FALSE",
+            "FALSE",
+            -1,
+            -1,
+            0.03999999910593033,
+            "FALSE",
+            {
+                "task_id": -1,
+                "type": "WeaponTypeParameterContainer",
+                "args": [
+                    "Primary Parameters",
+                    0,
+                    {
+                        "task_id": -1,
+                        "type": "LaserDesignator",
+                        "args": [
+                            "",
+                            50,
+                            "fire_laserdesignator_1st",
+                            "",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            {
+                "task_id": -1,
+                "type": "WeaponTypeParameterContainer",
+                "args": [
+                    "Secondary Parameters",
+                    1,
+                    {
+                        "task_id": -1,
+                        "type": "Zoom",
+                        "args": [
+                            "",
+                            10,
+                            40,
+                            2,
+                            "TASKTYPE_LASERDESIGNATOROVERLAY",
+                            "FALSE",
+                            "",
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,7 @@
+Task_New(-1, "WeaponType", "WEAPON_ID_PROXIMITYMINE", "WEAPON_ID_PROXIMITYMINE", "PROXIMITYMINE", "proximitymine", "WEAPONS:proximity.spr", WEAPONTYPE_PROXIMITYMINE, WEAPONCATEGORY_PROXIMITYMINE, SIGHTDISPLAYTYPE_NONE, "136_01_1", 1, 1, 1, 1, "", "", "", 0, 0, 0, 0.10000000149011612, 0.5, 
+0.30000001192092896, 0.10000000149011612, 0.30000001192092896, 0.10000000149011612, 2, 2, 1, 0.15000000596046448, 0.4000000059604645, "walk_proximitymine_1st", "run_proximitymine_1st", "weaponraise_proximitymine_1st", "", "", "", "", "", "", "", "", "", "", "yellglow", 75, TASKTYPE_PROXIMITYMINE, 
+TRUE, FALSE, TASKTYPE_REMOTEMINE, TRUE, FALSE, FALSE, "WEAPONS:proximity_pickup.spr", FALSE, FALSE, 1500, TRUE, TRUE, 7, 4, 0.03999999910593033, TRUE, 
+	Task_New(-1, "WeaponTypeParameterContainer", "Primary Parameters", 0, 
+		Task_New(-1, "ProximityMine", "", AMMO_ID_PROXIMITYMINE, 20, 1.5, 2, 0.5, 1.5, 4, "fire_proximitymine_1st", "", "proxymine_arm")), 
+	Task_New(-1, "WeaponTypeParameterContainer", "Secondary Parameters", 1, 
+		Task_New(-1, "RemoteMine", "", AMMO_ID_PROXIMITYMINE, 20, 1.5, 2, 0.5, 1.5, 4, "fire_proximitymine_1st", "", "")));
