@@ -1,7 +1,8 @@
 # Created By MotherOfProgrammers(MOP)
+
 import os
 import sys
-from src.weapon_parsers import decode_weapon_textures, diff_weapon_data
+from src.core.weapon_parsers import decode_weapon_textures, diff_weapon_data
 
 
 def main():

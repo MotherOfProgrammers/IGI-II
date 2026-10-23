@@ -1,8 +1,8 @@
 Weapon Configs
 
-weapons/weapon.qsc - base weapon data
+weapons/weapon.qsc - base weapon data (weapon ammo per clip, total ammo, gun RPM and etc)
 weapon/ammo.qsc
-humanplayer/humanplayer.qsc - player limits, weapon limits, initializations
+humanplayer/humanplayer.qsc - player limits, weapon limits, initializations, this also sets the multiplayer store data of weapons
 missions/location{location_number}/level{level_number}/objects.qsc - level based limitations
 
 
