@@ -129,7 +129,7 @@ def main():
 		raise ValueError(f"{debugger.symbol("error")}{debugger.cl(" Input cannot be empty."),"red-br"}")
 
 	root_count, dir_count, files_count = 0, 0, 0
-	for root, dir, files in os.walk(conf["igi2"]["game_dir"]):
+	for root, dir, files in os.walk(conf_data["igi2"]["game_dir"]):
 		if root != '':
 			root_count += 1
 		if len(dir) > 0:
