@@ -4,6 +4,7 @@ import sys
 import time
 import colorama
 from colorama import Fore, Style
+import os
 
 colorama.init(autoreset=True)
 
@@ -23,7 +24,7 @@ LOGO = [
 ]
 
 
-def animate_banner(delay=0.002):
+def initiate_banner(delay=0.002):
     print()
 
     for i, line in enumerate(LOGO):
@@ -38,7 +39,8 @@ def animate_banner(delay=0.002):
     print(f"{C}{BR}       G  --- => E  --- => N --- =>  I G I  {R}")
     print(f"{B}{BR}  {'=' * 47}{R}")
     print()
+    s = os.system('cls')
 
 
 #if __name__ == "__main__":
-#    animate_banner()
+#    initiate_banner()
