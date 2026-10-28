@@ -1,0 +1,12 @@
+DRIT(Data Route Index Tree) - Indexed By MotherOfProgrammers(MOP)
+
+Date: 28/10/2026
+Section: General Icons IGI2
+Target: Contains the data such as health bar(PowerBase), ammo, silent taking,... icons
+	Which are applied in every mission of any type of the game(single player/multi player)
+
+General Directory Pattern -> {BASE_DIR}/screens/game/status
+igi2_collected ->
+igi2_converted -> .tga
+
+NOTE: {BASE_DIR} is a variable root directory which may either point to the real game or igi2_collected or igi2_converted

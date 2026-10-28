@@ -95,6 +95,7 @@ def download_igi2conv():
 
 def main():
 	fs_objs = os.listdir()
+	print(f"{debugger.symbol("info")} Creating Missing Directories...")
 	if not "out" in fs_objs:
 		Path(OUT_DIR).mkdir(parents=True,exist_ok=True)
 
@@ -103,6 +104,7 @@ def main():
 		if status == False:
 			sys.exit(-1)
 
+	print(f"{debugger.symbol("info")} Initializing IGIPY...")
 	if not "igipy.json" in fs_objs:
 		try:
 			result = subprocess.run(
@@ -140,7 +142,7 @@ def main():
 		print(f"{debugger.symbol("error")}{debugger.cl(f" The given {conf_data["igi2"]["game_dir"]} is not a genuine path!","red-br")}")
 		sys.exit(-1)
 
-
+	print(f"{debugger.symbol("info")} Extracting Data...")
 	if not "igi2_collected" in fs_objs:
 		try:
 			result = subprocess.run(
@@ -180,25 +182,35 @@ def main():
 			print(f"{debugger.symbol("error")}{debugger.cl(f" An unknown error occured due to => {e}","red-br")}")
 			sys.exit(-1)
 
+	print(f"{debugger.symbol("info")} Converting Data...")
 	if not "igi2_converted" in fs_objs:
-		try:
-			result = subprocess.run(
-				[
-				"igipy",
-				"igi2",
-				"convert-qvm-to-qsc"
-				],
-				stdout=subprocess.DEVNULL,
-				stderr=subprocess.DEVNULL,
-				creationflags=getattr(subprocess,"CREATE_NO_WINDOW",0),
-				check=False
-				)
-			if result.returncode != 0:
-				print(f"{debugger.symbol("error")}{debugger.cl(f" IGIPY module parsing of igi2 is unsuccessful!","red-br")}")
+		final_args = [
+		"convert-qvm-to-qsc",
+		"convert-tex-to-tga",
+		"convert-thm-to-tga",
+		"convert-tmm-to-tga",
+		"convert-tlm-to-tga",
+		"convert-olm-to-tga"
+		]
+		for arg in final_args:
+			try:
+				result = subprocess.run(
+					[
+					"igipy",
+					"igi2",
+					arg
+					],
+					stdout=subprocess.DEVNULL,
+					stderr=subprocess.DEVNULL,
+					creationflags=getattr(subprocess,"CREATE_NO_WINDOW",0),
+					check=False
+					)
+				if result.returncode != 0:
+					print(f"{debugger.symbol("error")}{debugger.cl(f" IGIPY module parsing of igi2 is unsuccessful!","red-br")}")
+					sys.exit(-1)
+			except OSError as e:
+				print(f"{debugger.symbol("error")}{debugger.cl(f" An unknown error occured due to => {e}","red-br")}")
 				sys.exit(-1)
-		except OSError as e:
-			print(f"{debugger.symbol("error")}{debugger.cl(f" An unknown error occured due to => {e}","red-br")}")
-			sys.exit(-1)
 	return True
 
 

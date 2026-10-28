@@ -1,0 +1,23 @@
+DRIT(Data Route Index Tree) - Indexed By MotherOfProgrammers(MOP)
+Multiplayer Maps IGI2
+
+igi2_collected -> textures(.tex), geometry models(.mef), model-to-texture associations(.mtp),
+		  terrain height map data(.thm), terrain light map data(.tlm), terrain material map data(.tmm),
+		  baked object lightmap data(.olm), game object and configuration scripts(.qsc)
+
+the game -> resource archive containing game assets(.res)
+
+further more(sub-direcotry of the collected directory-> file format -> resultant file in the game):
+	heightmaps/ -> .thm/.tlm/.tmm -> .res
+	lightmaps/ -> .olm -> .res
+	model/ -> .mef -> .res
+	sounds/ -> .wav/.qvm -> .res/.qvm
+	textures/ -> .tex -> .res/.tga
+	/ -> .mtp/.dat/.qvm -> .mtp/.dat/.qvm
+
+NOTE: .qsc can be found in the igi_converted)
+NOTE: .thm(terrain height map data), .tlm(terrain light map data), .tmm(terrain material map data)
+
+Except these directories the game has envmaps and ai directories where:
+envmaps -> has water(is natural resources) data in .res
+ai -> usually empty

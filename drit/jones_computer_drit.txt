@@ -1,0 +1,13 @@
+DRIT(Data Route Index Tree) - Indexed By MotherOfProgrammers(MOP)
+
+Date: 28/10/2026
+Section: Internal Game Computer Data Of IGI2
+Target: Contains the extended detailed data referred for the computer of jones which contains maps, objects and logs.
+	The directories work is to detail only the base of the computer of jones which may not include the realtime maps
+	except the layout of the screen and etc.
+
+General Directory Pattern -> {BASE_DIR}/computer
+igi2_collected ->
+igi2_converted -> .tga
+
+NOTE: {BASE_DIR} is a variable root directory which may either point to the real game or igi2_collected or igi2_converted
