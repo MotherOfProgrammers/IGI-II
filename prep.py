@@ -1,3 +1,4 @@
+
 # Created By MotherOfProgrammers(MOP)
 
 import os
@@ -31,7 +32,7 @@ HEADERS = {"User-Agent": "Mozilla/5.0"}
 debugger = debug_literals.debug
 
 def download_igi2conv():
-	try:
+    try:
         with requests.Session() as session:
             response = session.get(URL, headers=HEADERS, timeout=30)
             response.raise_for_status()
@@ -94,134 +95,134 @@ def download_igi2conv():
         return False
 
 def main():
-	fs_objs = os.listdir()
-	print(f"{debugger.symbol("info")} Creating Missing Directories...")
-	if not "out" in fs_objs:
-		Path(OUT_DIR).mkdir(parents=True,exist_ok=True)
+    fs_objs = os.listdir()
+    print(f"{debugger.symbol("info")} Creating Missing Directories...")
+    if not "out" in fs_objs:
+        Path(OUT_DIR).mkdir(parents=True,exist_ok=True)
 
-	if not "igi2conv-windows-x86_64-qt-r9" in fs_objs:
-		status = download_igi2conv()
-		if status == False:
-			sys.exit(-1)
+    if not "igi2conv-windows-x86_64-qt-r9" in fs_objs:
+        status = download_igi2conv()
+        if status == False:
+            sys.exit(-1)
 
-	print(f"{debugger.symbol("info")} Initializing IGIPY...")
-	if not "igipy.json" in fs_objs:
-		try:
-			result = subprocess.run(
-				["igipy"],
-				stdout=subprocess.DEVNULL,
-				stderr=subprocess.DEVNULL,
-				creationflags=getattr(subprocess,"CREATE_NO_WINDOW",0),
-				check=False
-				)
-			if result.returncode != 0:
-				print(f"{debugger.symbol("error")}{debugger.cl(" IGIPY module initalization unsuccessful!","red-br")}")
-		except OSError as e:
-			print(f"{debugger.symbol("error")}{debugger.cl(f" An unknown error occured due to => {e}")}")
-			sys.exit(-1)
+    print(f"{debugger.symbol("info")} Initializing IGIPY...")
+    if not "igipy.json" in fs_objs:
+        try:
+            result = subprocess.run(
+                ["igipy"],
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+                creationflags=getattr(subprocess,"CREATE_NO_WINDOW",0),
+                check=False
+                )
+            if result.returncode != 0:
+                print(f"{debugger.symbol("error")}{debugger.cl(" IGIPY module initalization unsuccessful!","red-br")}")
+        except OSError as e:
+            print(f"{debugger.symbol("error")}{debugger.cl(f" An unknown error occured due to => {e}")}")
+            sys.exit(-1)
 
-	Path(DUMMY_DIR).mkdir(parents=True,exist_ok=True)
-	with open("igipy.json",'r') as igipy_conf:
-		conf_data = json.load(igipy_conf)
+    Path(DUMMY_DIR).mkdir(parents=True,exist_ok=True)
+    with open("igipy.json",'r') as igipy_conf:
+        conf_data = json.load(igipy_conf)
 
-	conf_data["igi1"]["game_dir"] = str(DUMMY_DIR)
-	conf_data["igi2"]["game_dir"] = str(input(f"{debugger.symbol("info")} Enter the path for IGI-2 game directory: "))
+    conf_data["igi1"]["game_dir"] = str(DUMMY_DIR)
+    conf_data["igi2"]["game_dir"] = str(input(f"{debugger.symbol("info")} Enter the path for IGI-2 game directory: "))
 
-	if len(conf_data["igi2"]["game_dir"]) == 0:
-		raise ValueError(f"{debugger.symbol("error")}{debugger.cl(" Input cannot be empty."),"red-br"}")
+    if len(conf_data["igi2"]["game_dir"]) == 0:
+        raise ValueError(f"{debugger.symbol("error")}{debugger.cl(" Input cannot be empty."),"red-br"}")
 
-	root_count, dir_count, files_count = 0, 0, 0
-	for root, dir, files in os.walk(conf_data["igi2"]["game_dir"]):
-		if root != '':
-			root_count += 1
-		if len(dir) > 0:
-			dir_count += 1
-		if len(files) > 0:
-			files_count += 1
-	if ((root_count == 0) or (dir_count == 0) or (files_count == 0)):
-		print(f"{debugger.symbol("error")}{debugger.cl(f" The given {conf_data["igi2"]["game_dir"]} is not a genuine path!","red-br")}")
-		sys.exit(-1)
+    root_count, dir_count, files_count = 0, 0, 0
+    for root, dir, files in os.walk(conf_data["igi2"]["game_dir"]):
+        if root != '':
+            root_count += 1
+        if len(dir) > 0:
+            dir_count += 1
+        if len(files) > 0:
+            files_count += 1
+    if ((root_count == 0) or (dir_count == 0) or (files_count == 0)):
+        print(f"{debugger.symbol("error")}{debugger.cl(f" The given {conf_data["igi2"]["game_dir"]} is not a genuine path!","red-br")}")
+        sys.exit(-1)
 
-	print(f"{debugger.symbol("info")} Extracting Data...")
-	if not "igi2_collected" in fs_objs:
-		try:
-			result = subprocess.run(
-				[
-				"igipy",
-				"igi2",
-				"extensions-of-game"
-				],
-				stdout=subprocess.DEVNULL,
-				stderr=subprocess.DEVNULL,
-				creationflags=getattr(subprocess,"CREATE_NO_WINDOW",0),
-				check=False
-				)
-			try:
-				result = subprocess.run(
-				[
-				"igipy",
-				"igi2",
-				"collect"
-				],
-				stdout=subprocess.DEVNULL,
-				stderr=subprocess.DEVNULL,
-				creationflags=getattr(subprocess,"CREATE_NO_WINDOW",0),
-				check=False
-				)
-				if result.returncode != 0:
-					print(f"{debugger.symbol("error")}{debugger.cl(f" IGIPY module parsing of igi2 is unsuccessful!","red-br")}")
-					sys.exit(-1)
-			except OSError as e:
-				print(f"{debugger.symbol("error")}{debugger.cl(f" An unknown error occured due to => {e}","red-br")}")
-				sys.exit(-1)
+    print(f"{debugger.symbol("info")} Extracting Data...")
+    if not "igi2_collected" in fs_objs:
+        try:
+            result = subprocess.run(
+                [
+                "igipy",
+                "igi2",
+                "extensions-of-game"
+                ],
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+                creationflags=getattr(subprocess,"CREATE_NO_WINDOW",0),
+                check=False
+                )
+            try:
+                result = subprocess.run(
+                [
+                "igipy",
+                "igi2",
+                "collect"
+                ],
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+                creationflags=getattr(subprocess,"CREATE_NO_WINDOW",0),
+                check=False
+                )
+                if result.returncode != 0:
+                    print(f"{debugger.symbol("error")}{debugger.cl(f" IGIPY module parsing of igi2 is unsuccessful!","red-br")}")
+                    sys.exit(-1)
+            except OSError as e:
+                print(f"{debugger.symbol("error")}{debugger.cl(f" An unknown error occured due to => {e}","red-br")}")
+                sys.exit(-1)
 
-			if result.returncode != 0:
-				print(f"{debugger.symbol("error")}{debugger.cl(f" IGIPY module parsing of igi2 is unsuccessful!","red-br")}")
-				sys.exit(-1)
-		except OSError as e:
-			print(f"{debugger.symbol("error")}{debugger.cl(f" An unknown error occured due to => {e}","red-br")}")
-			sys.exit(-1)
+            if result.returncode != 0:
+                print(f"{debugger.symbol("error")}{debugger.cl(f" IGIPY module parsing of igi2 is unsuccessful!","red-br")}")
+                sys.exit(-1)
+        except OSError as e:
+            print(f"{debugger.symbol("error")}{debugger.cl(f" An unknown error occured due to => {e}","red-br")}")
+            sys.exit(-1)
 
-	print(f"{debugger.symbol("info")} Converting Data...")
-	if not "igi2_converted" in fs_objs:
-		final_args = [
-		"convert-qvm-to-qsc",
-		"convert-tex-to-tga",
-		"convert-thm-to-tga",
-		"convert-tmm-to-tga",
-		"convert-tlm-to-tga",
-		"convert-olm-to-tga"
-		]
-		for arg in final_args:
-			try:
-				result = subprocess.run(
-					[
-					"igipy",
-					"igi2",
-					arg
-					],
-					stdout=subprocess.DEVNULL,
-					stderr=subprocess.DEVNULL,
-					creationflags=getattr(subprocess,"CREATE_NO_WINDOW",0),
-					check=False
-					)
-				if result.returncode != 0:
-					print(f"{debugger.symbol("error")}{debugger.cl(f" IGIPY module parsing of igi2 is unsuccessful!","red-br")}")
-					sys.exit(-1)
-			except OSError as e:
-				print(f"{debugger.symbol("error")}{debugger.cl(f" An unknown error occured due to => {e}","red-br")}")
-				sys.exit(-1)
-	return True
+    print(f"{debugger.symbol("info")} Converting Data...")
+    if not "igi2_converted" in fs_objs:
+        final_args = [
+        "convert-qvm-to-qsc",
+        "convert-tex-to-tga",
+        "convert-thm-to-tga",
+        "convert-tmm-to-tga",
+        "convert-tlm-to-tga",
+        "convert-olm-to-tga"
+        ]
+        for arg in final_args:
+            try:
+                result = subprocess.run(
+                    [
+                    "igipy",
+                    "igi2",
+                    arg
+                    ],
+                    stdout=subprocess.DEVNULL,
+                    stderr=subprocess.DEVNULL,
+                    creationflags=getattr(subprocess,"CREATE_NO_WINDOW",0),
+                    check=False
+                    )
+                if result.returncode != 0:
+                    print(f"{debugger.symbol("error")}{debugger.cl(f" IGIPY module parsing of igi2 is unsuccessful!","red-br")}")
+                    sys.exit(-1)
+            except OSError as e:
+                print(f"{debugger.symbol("error")}{debugger.cl(f" An unknown error occured due to => {e}","red-br")}")
+                sys.exit(-1)
+    return True
 
 
 if __name__ == '__main__':
-	if hashlib.sha512(str(platform.uname()[0]).encode()).hexdigest() == store.entry_key:
-		comm_banner.initiate_banner()
-		status = main()
-		if status == True:
-			print(f"{debugger.symbol("success")} Preparation successful!")
-			print(f"{debugger.symbol("success")} Ready to go!")
-			sys.exit(0)
-	else:
-		raise OSError("Unsupported Operating System!")
-		sys.exit(-1)
+    if hashlib.sha512(str(platform.uname()[0]).encode()).hexdigest() == store.entry_key:
+        comm_banner.initiate_banner()
+        status = main()
+        if status == True:
+            print(f"{debugger.symbol("success")} Preparation successful!")
+            print(f"{debugger.symbol("success")} Ready to go!")
+            sys.exit(0)
+    else:
+        raise OSError("Unsupported Operating System!")
+        sys.exit(-1)
